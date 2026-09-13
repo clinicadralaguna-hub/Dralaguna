@@ -341,9 +341,12 @@
         <i data-lucide="message-circle" class="w-4 h-4"></i>
         WhatsApp
       </a>
-      <a href="#cita" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium">
-        <span>Reservar cita</span>
-        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      <a href="https://secure.infomed.es/ClienteHTML/dhtml.render.php?XSK=TETWYK6EEW7UQUORDQEEAEEEOHK6SERQ"
+        target="_blank"
+        rel="noopener"
+        class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium">
+        <span>Pedir cita</span>
+        <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
       </a>
     </div>
 
@@ -831,51 +834,44 @@
       <!-- Formulario → envía por WhatsApp (sin servidor).
            💡 Opcional: sustitúyelo por el embed de Doctoralia / Clínica Cloud -->
       <div id="cita" class="reveal">
-        <div class="bg-[var(--cream-light)] rounded-3xl p-8 md:p-12 border border-[var(--pine)]/10 shadow-xl">
-          <h3 class="font-display text-3xl text-[var(--pine-deep)] mb-2">Pide tu cita</h3>
-          <p class="text-sm text-[var(--gray)] mb-8">Rellena el formulario y se abrirá WhatsApp con tu solicitud lista para enviar.</p>
+        <div class="bg-[var(--cream-light)] rounded-3xl p-8 md:p-12 border border-[var(--pine)]/10 shadow-xl h-full flex flex-col justify-center">
 
-          <form id="citaForm" novalidate>
-            <div class="mb-6">
-              <label for="fNombre" class="block text-xs uppercase tracking-widest text-[var(--gray)] mb-1">Nombre *</label>
-              <input type="text" id="fNombre" name="nombre" class="input-field" placeholder="Tu nombre y apellido" required autocomplete="name">
-            </div>
-            <div class="mb-6">
-              <label for="fTelefono" class="block text-xs uppercase tracking-widest text-[var(--gray)] mb-1">Teléfono *</label>
-              <input type="tel" id="fTelefono" name="telefono" class="input-field" placeholder="600 000 000" required autocomplete="tel">
-            </div>
-            <div class="mb-6">
-              <label for="fTratamiento" class="block text-xs uppercase tracking-widest text-[var(--gray)] mb-1">Tratamiento</label>
-              <select id="fTratamiento" name="tratamiento" class="input-field bg-transparent">
-                <option value="Primera visita / revisión">Primera visita / revisión</option>
-                <option value="Implantes dentales">Implantes dentales</option>
-                <option value="Ortodoncia / Invisalign">Ortodoncia / Invisalign</option>
-                <option value="Periodoncia">Periodoncia</option>
-                <option value="Endodoncia">Endodoncia</option>
-                <option value="Cirugía oral">Cirugía oral</option>
-                <option value="Estética dental">Estética dental</option>
-                <option value="Prótesis">Prótesis</option>
-                <option value="Odontología general">Odontología general</option>
-              </select>
-            </div>
-            <div class="mb-6">
-              <label for="fMensaje" class="block text-xs uppercase tracking-widest text-[var(--gray)] mb-1">Mensaje</label>
-              <textarea id="fMensaje" name="mensaje" rows="2" class="input-field resize-none" placeholder="¿Algo que debamos saber? (opcional)"></textarea>
-            </div>
+          <div class="w-14 h-14 rounded-full bg-[var(--sage)]/15 flex items-center justify-center mb-6">
+            <i data-lucide="calendar-check" class="w-6 h-6 text-[var(--pine)]"></i>
+          </div>
 
-            <!-- Consentimiento RGPD obligatorio (datos de salud = categoría especial) -->
-            <label class="flex items-start gap-3 mb-8 cursor-pointer">
-              <input type="checkbox" id="fConsent" required class="mt-1 w-4 h-4 accent-[var(--pine)] flex-shrink-0">
-              <span class="text-xs text-[var(--gray)] leading-relaxed">
-                He leído y acepto la <a href="legal/politica-privacidad.html" class="underline text-[var(--pine)]">política de privacidad</a>. Autorizo el tratamiento de mis datos, incluidos datos de salud, para gestionar mi cita.
-              </span>
-            </label>
+          <h3 class="font-display text-3xl text-[var(--pine-deep)] mb-4">
+            Pide tu cita
+          </h3>
 
-            <button type="submit" class="btn-whatsapp w-full px-6 py-4 rounded-full text-sm font-medium inline-flex items-center justify-center gap-2">
-              <i data-lucide="send" class="w-4 h-4"></i>
-              Enviar solicitud por WhatsApp
-            </button>
-          </form>
+          <p class="text-[var(--gray)] leading-relaxed mb-8">
+            Puedes solicitar tu cita directamente en nuestra agenda online o escribirnos por WhatsApp.
+            Elige la opción que te resulte más cómoda.
+          </p>
+
+          <a href="https://secure.infomed.es/ClienteHTML/dhtml.render.php?XSK=TETWYK6EEW7UQUORDQEEAEEEOHK6SERQ"
+            target="_blank"
+            rel="noopener"
+            class="btn-primary w-full px-6 py-4 rounded-full text-sm font-medium inline-flex items-center justify-center gap-2 mb-4">
+
+            <i data-lucide="calendar-check" class="w-4 h-4"></i>
+            <span>Pedir cita online</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+
+          <a href="https://wa.me/34652540903?text=Hola%20Dra.%20Laguna,%20me%20gustar%C3%ADa%20pedir%20una%20cita."
+            target="_blank"
+            rel="noopener"
+            class="btn-whatsapp w-full px-6 py-4 rounded-full text-sm font-medium inline-flex items-center justify-center gap-2">
+
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span>Pedir cita por WhatsApp</span>
+          </a>
+
+          <p class="text-xs text-[var(--gray-soft)] text-center mt-5">
+            La cita online se gestiona de forma segura a través de Infomed.
+          </p>
+
         </div>
       </div>
 
@@ -1129,21 +1125,6 @@
     });
   });
 
-  /* ── Formulario de cita → WhatsApp ── */
-  document.getElementById('citaForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    const nombre = document.getElementById('fNombre').value.trim();
-    const tel = document.getElementById('fTelefono').value.trim();
-    const trato = document.getElementById('fTratamiento').value;
-    const msg = document.getElementById('fMensaje').value.trim();
-    const consent = document.getElementById('fConsent').checked;
-
-    if(!nombre || !tel){ alert('Por favor, indícanos tu nombre y teléfono.'); return; }
-    if(!consent){ alert('Necesitamos tu consentimiento para gestionar la solicitud.'); return; }
-
-    const text = `Hola Dra. Laguna, soy ${nombre} (tel. ${tel}).\nQuisiera pedir cita para: ${trato}.` + (msg ? `\n\n${msg}` : '');
-    window.open('https://wa.me/34652540903?text=' + encodeURIComponent(text), '_blank', 'noopener');
-  });
 
   /* ── Banner cookies ── */
   const banner = document.getElementById('cookieBanner');
