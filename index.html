@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica Dental Dra. Laguna en Badalona | Implantes, Invisalign y Estética Dental</title>
+<meta name="description" content="Clínica dental en Badalona con 5.0 en Google. Implantes guiados 3D, ortodoncia invisible Invisalign, periodoncia, estética dental y flujo 100% digital. Pide cita por WhatsApp.">
+<link rel="canonical" href="https://www.dralaguna.es/"> <!-- TODO: tu dominio real -->
+
+<!-- ═══ SEO SOCIAL: tu enlace muestra tarjeta al compartirlo por WhatsApp ═══ -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Clínica Dental Dra. Laguna · Badalona">
+<meta property="og:description" content="Implantes guiados 3D, Invisalign y estética dental. Tecnología de vanguardia y trato cercano. 5.0 en Google.">
+<meta property="og:url" content="https://www.dralaguna.es/"> <!-- TODO: tu dominio -->
+<meta property="og:image" content="https://www.dralaguna.es/img/og-image.jpg"> <!-- TODO: foto 1200x630px -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1c3a2e">
+
+<!-- Favicon inline con vuestro logo (funciona sin archivos extra) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 4C16 4 8 10 8 18C8 23.5 12 28 16 28C20 28 24 23.5 24 18C24 10 16 4 16 4Z' fill='none' stroke='%231c3a2e' stroke-width='2'/%3E%3Cpath d='M16 12V20M12 16H20' stroke='%231c3a2e' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- ═══ DATOS ESTRUCTURADOS (SEO local). TODO: dirección y horarios reales.
+     Borra aggregateRating si el 5.0 / nº de reseñas no coincide con tu Google real ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Clínica Dental Dra. Laguna",
+  "url": "https://www.dralaguna.es/",
+  "telephone": "+34652540903",
+  "image": "https://www.dralaguna.es/img/og-image.jpg",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle y número — COMPLETAR",
+    "addressLocality": "Badalona",
+    "addressRegion": "Barcelona",
+    "postalCode": "08911",
+    "addressCountry": "ES"
+  },
+  "openingHours": "Mo-Fr 09:00-20:00",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "40"
+  }
+}
+</script>
+
+<!-- Fuentes: solo los pesos que usas + cursiva Fraunces REAL -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!--
+╔══════════════════════════════════════════════════════════════════╗
+║  ⚠️ ANTES DE PUBLICAR — Tailwind compilado (el CDN es solo demo)  ║
+║                                                                  ║
+║  npm install -D tailwindcss@3.4                                  ║
+║  npx tailwindcss init -p                                         ║
+║  → tailwind.config.js:  content: ["./**/*.html"]                 ║
+║  → input.css:  @tailwind base; @tailwind components;             ║
+║                @tailwind utilities;                              ║
+║  npx tailwindcss -i input.css -o css/styles.css --minify         ║
+║                                                                  ║
+║  Y sustituye la línea de abajo por:                              ║
+║  <link rel="stylesheet" href="/css/styles.css">                  ║
+╚══════════════════════════════════════════════════════════════════╝
+-->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Lucide FIJADO a una versión -->
+<script src="https://unpkg.com/lucide@0.462.0"></script>
+
+<style>
+  :root{
+    --cream:#f6f1e9; --cream-light:#fbf7f0; --cream-deep:#ede5d6;
+    --pine:#1c3a2e; --pine-light:#2d4a3e; --pine-deep:#0f261c;
+    --sage:#8ba888; --sage-soft:#c4d1c0;
+    --gold:#b8995f; --gold-light:#d4b878;
+    --charcoal:#1a1a1a; --gray:#6b6b6b; --gray-soft:#9a9a9a;
+    --whatsapp:#25D366;
+  }
+
+  *{ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  html{ scroll-behavior: smooth; }
+
+  body{ font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--charcoal); overflow-x:hidden; }
+  .font-display{ font-family:'Fraunces',serif; font-optical-sizing:auto; }
+
+  /* Enlace saltar contenido (accesibilidad) */
+  .skip-link{ position:absolute; left:-9999px; top:0; z-index:100; background:var(--pine); color:var(--cream-light); padding:.75rem 1.5rem; border-radius:0 0 .75rem 0; }
+  .skip-link:focus{ left:0; }
+
+  .grain::before{
+    content:''; position:fixed; inset:0; pointer-events:none; z-index:9999; opacity:.035;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* NAV: pine desde el inicio (contraste correcto); al hacer scroll, fondo blur */
+  .nav-scrolled{
+    background:rgba(246,241,233,.88);
+    backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+    border-bottom:1px solid rgba(28,58,46,.08);
+  }
+  .nav-link{ position:relative; color:var(--pine); transition:color .3s ease; }
+  .nav-link::after{ content:''; position:absolute; left:0; bottom:-4px; width:0; height:1px; background:currentColor; transition:width .4s ease; }
+  .nav-link:hover::after{ width:100%; }
+
+  .hero-bg{
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 40%, rgba(139,168,136,.25), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 20% 80%, rgba(184,153,95,.15), transparent 60%),
+      linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%);
+  }
+
+  .float-slow{ animation:float 7s ease-in-out infinite; }
+  .float-slower{ animation:float 10s ease-in-out infinite; }
+  @keyframes float{ 0%,100%{ transform:translateY(0) rotate(0deg);} 50%{ transform:translateY(-18px) rotate(2deg);} }
+
+  .reveal{ opacity:0; transform:translateY(40px); transition:opacity 1s cubic-bezier(.2,.7,.2,1), transform 1s cubic-bezier(.2,.7,.2,1); }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+  .reveal-delay-1{ transition-delay:.1s; } .reveal-delay-2{ transition-delay:.2s; }
+  .reveal-delay-3{ transition-delay:.3s; } .reveal-delay-4{ transition-delay:.4s; }
+
+  .service-lux{
+    background:var(--cream-light); border:1px solid rgba(28,58,46,.06);
+    transition:all .5s cubic-bezier(.2,.7,.2,1); position:relative; overflow:hidden;
+  }
+  .service-lux::before{
+    content:''; position:absolute; top:0; left:0; width:100%; height:2px;
+    background:var(--gold); transform:scaleX(0); transform-origin:left; transition:transform .5s ease;
+  }
+  .service-lux:hover{ transform:translateY(-10px); box-shadow:0 30px 60px -20px rgba(28,58,46,.15); border-color:rgba(184,153,95,.3); }
+  .service-lux:hover::before{ transform:scaleX(1); }
+  .service-lux:hover .svc-lux-num{ color:var(--gold); }
+  .service-lux:hover .svc-lux-btn{ gap:12px; color:var(--pine); }
+  .svc-lux-num{ transition:color .4s ease; }
+  .svc-lux-btn{ transition:all .4s ease; gap:8px; }
+  .service-lux:focus-visible{ outline:2px solid var(--gold); outline-offset:4px; }
+
+  /* MODAL accesible (dialog + Escape + foco) */
+  .modal-overlay{
+    position:fixed; inset:0; z-index:100;
+    background:rgba(15,38,28,.8); backdrop-filter:blur(8px);
+    display:flex; align-items:center; justify-content:center;
+    opacity:0; pointer-events:none; transition:opacity .4s ease; padding:1.5rem;
+  }
+  .modal-overlay.active{ opacity:1; pointer-events:auto; }
+  .modal-content{
+    background:var(--cream-light); border-radius:1.5rem; max-width:900px; width:100%;
+    box-shadow:0 40px 80px -20px rgba(0,0,0,.3);
+    transform:scale(.9) translateY(20px); transition:transform .4s cubic-bezier(.2,.7,.2,1);
+    max-height:90vh; overflow-y:auto; position:relative;
+  }
+  .modal-overlay.active .modal-content{ transform:scale(1) translateY(0); }
+  .modal-close{
+    position:absolute; top:1.5rem; right:1.5rem; z-index:10;
+    width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,.9);
+    display:flex; align-items:center; justify-content:center; cursor:pointer;
+    transition:all .3s ease; border:1px solid rgba(28,58,46,.1);
+  }
+  .modal-close:hover{ background:var(--pine); color:var(--cream-light); }
+
+  /* ═══ EQUIPO: iconos de doctor/a hasta que subas las fotos reales.
+     Cuando exista img/equipo/xxx.jpg, la foto aparece sola encima del icono. ═══ */
+  .photo-fallback{
+    position:absolute; inset:0;
+    display:flex; align-items:center; justify-content:center;
+    color:var(--sage);
+  }
+  .team-photo-frame{
+    position:relative; aspect-ratio:3/4; border-radius:1rem; overflow:hidden;
+    background:var(--cream-deep); border:1px solid rgba(28,58,46,.08);
+  }
+  .team-photo-frame img{ width:100%; height:100%; object-fit:cover; transition:transform .8s cubic-bezier(.2,.7,.2,1); }
+  .team-card:hover .team-photo-frame img{ transform:scale(1.05); }
+  .team-photo-overlay{
+    position:absolute; inset:0; background:linear-gradient(180deg, transparent 40%, rgba(15,38,28,.85) 100%);
+    display:flex; align-items:flex-end; padding:1.5rem;
+  }
+
+  .btn-primary{ background:var(--pine); color:var(--cream-light); transition:all .35s ease; position:relative; overflow:hidden; }
+  .btn-primary::before{ content:''; position:absolute; inset:0; background:var(--gold); transform:translateY(100%); transition:transform .4s ease; }
+  .btn-primary > *{ position:relative; z-index:1; }
+  .btn-primary:hover::before{ transform:translateY(0); }
+  .btn-primary:hover{ color:var(--pine-deep); }
+
+  .btn-whatsapp{ background:var(--whatsapp); color:white; transition:all .35s ease; }
+  .btn-whatsapp:hover{ background:#1da851; transform:translateY(-2px); box-shadow:0 10px 20px -5px rgba(37,211,102,.4); }
+
+  .divider-leaf{ display:flex; align-items:center; gap:1rem; color:var(--gold); }
+  .divider-leaf::before, .divider-leaf::after{ content:''; flex:1; height:1px; background:linear-gradient(90deg, transparent, var(--gold), transparent); }
+
+  .input-field{
+    background:transparent; border:none; border-bottom:1px solid rgba(28,58,46,.2);
+    padding:1rem 0; transition:border-color .3s ease; width:100%;
+    font-family:'DM Sans',sans-serif; color:var(--charcoal);
+  }
+  .input-field:focus{ outline:none; border-color:var(--gold); }
+  .input-field::placeholder{ color:var(--gray-soft); }
+
+  .map-frame{ border-radius:1.25rem; overflow:hidden; box-shadow:0 30px 60px -20px rgba(28,58,46,.2); border:1px solid rgba(28,58,46,.1); }
+  .map-frame iframe{ display:block; width:100%; height:100%; min-height:450px; border:0; filter:grayscale(.3) contrast(1.05); }
+
+  .blob{ position:absolute; border-radius:50%; filter:blur(60px); pointer-events:none; z-index:0; }
+
+  .mobile-menu{ transform:translateX(100%); transition:transform .5s cubic-bezier(.2,.7,.2,1); }
+  .mobile-menu.open{ transform:translateX(0); }
+
+  ::-webkit-scrollbar{ width:10px; } ::-webkit-scrollbar-track{ background:var(--cream-deep); }
+  ::-webkit-scrollbar-thumb{ background:var(--sage); border-radius:10px; }
+  ::-webkit-scrollbar-thumb:hover{ background:var(--pine); }
+  ::selection{ background:var(--pine); color:var(--cream-light); }
+
+  .marquee-reviews{ display:flex; overflow:hidden; gap:2rem; position:relative; }
+  .marquee-reviews::after, .marquee-reviews::before{ content:''; position:absolute; top:0; bottom:0; width:150px; z-index:2; pointer-events:none; }
+  .marquee-reviews::after{ right:0; background:linear-gradient(90deg, transparent, var(--cream)); }
+  .marquee-reviews::before{ left:0; background:linear-gradient(-90deg, transparent, var(--cream)); }
+  .marquee-track-reviews{ display:flex; gap:2rem; animation:scroll-left 90s linear infinite; flex-shrink:0; }
+  @keyframes scroll-left{ from{ transform:translateX(0);} to{ transform:translateX(-100%);} }
+  .marquee-reviews:hover .marquee-track-reviews{ animation-play-state:paused; }
+
+  .wa-float{
+    position:fixed; bottom:24px; right:24px; z-index:50;
+    background:var(--whatsapp); color:white; width:64px; height:64px;
+    border-radius:50%; display:flex; align-items:center; justify-content:center;
+    box-shadow:0 10px 25px -5px rgba(37,211,102,.5);
+    transition:all .3s ease; animation:wa-pulse 2.5s infinite;
+  }
+  .wa-float:hover{ transform:scale(1.1); }
+  @keyframes wa-pulse{
+    0%{ box-shadow:0 0 0 0 rgba(37,211,102,.5);}
+    70%{ box-shadow:0 0 0 15px rgba(37,211,102,0);}
+    100%{ box-shadow:0 0 0 0 rgba(37,211,102,0);}
+  }
+
+  /* Banner de cookies RGPD */
+  .cookie-banner{
+    position:fixed; bottom:24px; left:24px; z-index:60; max-width:380px;
+    background:var(--cream-light); border:1px solid rgba(28,58,46,.12);
+    border-radius:1.25rem; padding:1.5rem; box-shadow:0 25px 50px -12px rgba(15,38,28,.25);
+    transform:translateY(150%); transition:transform .5s cubic-bezier(.2,.7,.2,1);
+  }
+  .cookie-banner.visible{ transform:translateY(0); }
+
+  @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; } }
+</style>
+</head>
+<body class="grain">
+
+<a href="#inicio" class="skip-link">Saltar al contenido</a>
+
+<!-- ═══ Iconos de doctor/a (línea fina, estilo de la marca).
+     Se muestran automáticamente hasta que exista la foto real ═══ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="dr-woman" viewBox="0 0 96 96">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="48" cy="16" r="7"/>
+        <circle cx="48" cy="37" r="14"/>
+        <path d="M34.5 32c-2.5 5-2.5 10 0 14"/>
+        <path d="M61.5 32c2.5 5 2.5 10 0 14"/>
+        <path d="M20 82c0-15 12-23 28-23s28 8 28 23"/>
+        <path d="M41 61l7 7 7-7"/>
+      </g>
+    </symbol>
+    <symbol id="dr-man" viewBox="0 0 96 96">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="48" cy="37" r="14"/>
+        <path d="M34 33a14 14 0 0 1 28 0z" fill="currentColor" stroke="none"/>
+        <path d="M20 82c0-15 12-23 28-23s28 8 28 23"/>
+        <path d="M41 61l7 7 7-7"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/34652540903?text=Hola%20Dra.%20Laguna,%20me%20gustar%C3%ADa%20pedir%20informaci%C3%B3n%20sobre%20una%20cita." target="_blank" rel="noopener" class="wa-float" aria-label="Contactar por WhatsApp">
+  <i data-lucide="message-circle" class="w-8 h-8"></i>
+</a>
+
+<!-- ═══ MODAL — con imagen auto-swap + fallback degradado con icono ═══ -->
+<div id="treatmentModal" class="modal-overlay">
+  <div class="modal-content flex flex-col md:flex-row" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" onclick="closeModal()" aria-label="Cerrar detalles">
+      <i data-lucide="x" class="w-5 h-5"></i>
+    </button>
+    <div id="modalFigWrap" class="w-full md:w-2/5 h-64 md:h-auto overflow-hidden flex-shrink-0 relative bg-[var(--pine)]">
+      <div class="absolute inset-0 bg-gradient-to-br from-[var(--pine-light)] via-[var(--pine)] to-[var(--pine-deep)] flex items-center justify-center">
+        <span id="modalFigIconWrap"></span>
+      </div>
+      <!-- Si existe img/tratamientos/<tratamiento>.jpg, la foto tapa el degradado sola -->
+      <img id="modalImg" alt="" class="absolute inset-0 w-full h-full object-cover" style="display:none">
+    </div>
+    <div class="w-full md:w-3/5 p-8 md:p-12 overflow-y-auto">
+      <div class="flex items-center gap-3 mb-6">
+        <div id="modalIconWrap" class="w-12 h-12 rounded-xl bg-[var(--sage)]/15 flex items-center justify-center text-[var(--pine)]"></div>
+        <span class="text-xs uppercase tracking-widest text-[var(--gold)] font-medium" id="modalTag">Especialidad</span>
+      </div>
+      <h3 id="modalTitle" class="font-display text-3xl md:text-4xl text-[var(--pine-deep)] mb-4"></h3>
+      <p id="modalIntro" class="text-[var(--gray)] leading-relaxed mb-8 text-lg"></p>
+
+      <h4 class="font-display text-xl text-[var(--pine)] mb-4">¿Qué incluye este tratamiento?</h4>
+      <ul id="modalList" class="space-y-3 mb-8"></ul>
+
+      <div class="pt-6 border-t border-[var(--pine)]/10">
+        <a id="modalWa" href="https://wa.me/34652540903" target="_blank" rel="noopener" class="btn-whatsapp inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          Resolver dudas por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-500">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+    <a href="#inicio" class="font-display text-2xl font-medium tracking-tight text-[var(--pine-deep)] flex items-center gap-2" aria-label="Clínica Dental Dra. Laguna — inicio">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 4C16 4 8 10 8 18C8 23.5 12 28 16 28C20 28 24 23.5 24 18C24 10 16 4 16 4Z" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M16 12V20M12 16H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      Dra. Laguna
+    </a>
+
+    <div class="hidden lg:flex items-center gap-10">
+      <a href="#inicio" class="nav-link text-sm font-medium">Inicio</a>
+      <a href="#tratamientos" class="nav-link text-sm font-medium">Tratamientos</a>
+      <a href="#equipo" class="nav-link text-sm font-medium">Equipo</a>
+      <a href="#tecnologia" class="nav-link text-sm font-medium">Tecnología</a>
+      <a href="#opiniones" class="nav-link text-sm font-medium">Opiniones</a>
+      <a href="#contacto" class="nav-link text-sm font-medium">Contacto</a>
+    </div>
+
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="https://wa.me/34652540903" target="_blank" rel="noopener" class="btn-whatsapp inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        WhatsApp
+      </a>
+      <a href="#cita" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium">
+        <span>Reservar cita</span>
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+
+    <button id="menuBtn" class="lg:hidden text-[var(--pine-deep)] p-2" aria-label="Abrir menú" aria-expanded="false">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- Menú móvil -->
+<div id="mobileMenu" class="mobile-menu fixed inset-0 z-50 bg-[var(--pine)] lg:hidden flex flex-col p-8" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+  <div class="flex justify-between items-center mb-12">
+    <span class="font-display text-2xl text-[var(--cream-light)]">Dra. Laguna</span>
+    <button id="closeMenu" class="text-[var(--cream-light)] p-2" aria-label="Cerrar menú">
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+  </div>
+  <nav class="flex flex-col gap-8">
+    <a href="#inicio" class="mobile-link font-display text-3xl text-[var(--cream-light)]">Inicio</a>
+    <a href="#tratamientos" class="mobile-link font-display text-3xl text-[var(--cream-light)]">Tratamientos</a>
+    <a href="#equipo" class="mobile-link font-display text-3xl text-[var(--cream-light)]">Equipo</a>
+    <a href="#tecnologia" class="mobile-link font-display text-3xl text-[var(--cream-light)]">Tecnología</a>
+    <a href="#opiniones" class="mobile-link font-display text-3xl text-[var(--cream-light)]">Opiniones</a>
+    <a href="#contacto" class="mobile-link font-display text-3xl text-[var(--cream-light)]">Contacto</a>
+  </nav>
+  <a href="https://wa.me/34652540903" target="_blank" rel="noopener" class="mobile-link mt-auto btn-whatsapp px-6 py-4 rounded-full text-center text-sm font-medium flex items-center justify-center gap-2 mb-3">
+    <i data-lucide="message-circle" class="w-5 h-5"></i> Escríbenos por WhatsApp
+  </a>
+  <a href="#cita" class="mobile-link btn-primary px-6 py-4 rounded-full text-center text-sm font-medium">Reservar cita</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section id="inicio" class="hero-bg relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+  <div class="blob" style="width:500px;height:500px;background:var(--sage);opacity:.3;top:-100px;right:-100px;"></div>
+  <div class="blob" style="width:400px;height:400px;background:var(--gold);opacity:.15;bottom:-50px;left:-100px;"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center relative z-10">
+    <div class="lg:col-span-7">
+      <div class="reveal inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur border border-[var(--pine)]/10 mb-8">
+        <span class="flex" aria-hidden="true">
+          <i data-lucide="star" class="w-4 h-4 fill-[var(--gold)] text-[var(--gold)]"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-[var(--gold)] text-[var(--gold)]"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-[var(--gold)] text-[var(--gold)]"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-[var(--gold)] text-[var(--gold)]"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-[var(--gold)] text-[var(--gold)]"></i>
+        </span>
+        <!-- TODO: enlaza a tu perfil real de Google Business -->
+        <a href="https://g.page/r/TU-PERFIL-GOOGLE" target="_blank" rel="noopener" class="text-xs font-medium text-[var(--pine)] tracking-wider uppercase hover:underline">
+          5.0 en Google · Badalona
+        </a>
+      </div>
+
+      <h1 class="reveal reveal-delay-1 font-display font-light text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.02] text-[var(--pine-deep)] tracking-tight">
+        <span class="block text-base md:text-lg font-medium tracking-[.25em] uppercase text-[var(--gold)] mb-5" style="font-family:'DM Sans',sans-serif;">
+          Clínica dental en Badalona
+        </span>
+        Tu sonrisa,<br>
+        <span class="italic font-normal text-[var(--pine)]">nuestra</span> pasión.
+      </h1>
+
+      <p class="reveal reveal-delay-2 mt-8 text-lg md:text-xl text-[var(--gray)] max-w-xl leading-relaxed">
+        En la Clínica Dental Dra. Laguna ofrecemos todos los servicios dentales en un solo lugar: desde una revisión general hasta cirugía guiada de implantes e Invisalign, con tecnología de vanguardia y un trato cercano.
+      </p>
+
+      <div class="reveal reveal-delay-3 mt-10 flex flex-wrap gap-4">
+        <a href="#cita" class="btn-primary px-8 py-4 rounded-full text-sm font-medium inline-flex items-center gap-2">
+          <span>Reservar consulta</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+        <a href="https://wa.me/34652540903" target="_blank" rel="noopener" class="btn-whatsapp px-8 py-4 rounded-full text-sm font-medium inline-flex items-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          WhatsApp directo
+        </a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-5 relative reveal reveal-delay-2">
+      <div class="relative">
+        <!-- Panel elegante ahora · cuando guardes img/hero.jpg, la foto aparece sola -->
+        <div class="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+          <div class="absolute inset-0 bg-gradient-to-br from-[var(--pine-light)] via-[var(--pine)] to-[var(--pine-deep)] flex items-center justify-center">
+            <svg width="170" height="170" viewBox="0 0 32 32" fill="none" aria-hidden="true" class="text-[var(--cream-light)] opacity-20">
+              <path d="M16 4C16 4 8 10 8 18C8 23.5 12 28 16 28C20 28 24 23.5 24 18C24 10 16 4 16 4Z" stroke="currentColor" stroke-width="1"/>
+              <path d="M16 12V20M12 16H20" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <img src="img/hero.jpg" alt="Dra. Laguna realizando escaneo intraoral con iTero para diseño de Invisalign" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high" onerror="this.remove()">
+        </div>
+
+        <div class="float-slow absolute -bottom-8 -left-8 bg-[var(--cream-light)] rounded-2xl shadow-xl p-5 max-w-[240px] border border-[var(--pine)]/10">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-[var(--sage)]/20 flex items-center justify-center">
+              <i data-lucide="scan-line" class="w-6 h-6 text-[var(--pine)]"></i>
+            </div>
+            <div>
+              <div class="text-xs text-[var(--gray)]">Escáner 3D</div>
+              <div class="font-display text-lg text-[var(--pine-deep)]">iTero &amp; Radiología</div>
+            </div>
+          </div>
+        </div>
+        <div class="float-slower absolute -top-6 -right-6 bg-[var(--pine)] rounded-2xl shadow-xl p-5 max-w-[220px]">
+          <div class="flex items-center gap-2 mb-2">
+            <div class="flex -space-x-2">
+              <div class="w-7 h-7 rounded-full border-2 border-[var(--pine)] bg-[var(--sage)]"></div>
+              <div class="w-7 h-7 rounded-full border-2 border-[var(--pine)] bg-[var(--gold)]"></div>
+              <div class="w-7 h-7 rounded-full border-2 border-[var(--pine)] bg-[var(--sage-soft)]"></div>
+            </div>
+            <span class="text-xs text-[var(--cream-light)]/70">Pacientes felices</span>
+          </div>
+          <div class="text-xs text-[var(--cream-light)] leading-relaxed">Trato cercano y resultados de 10 en Badalona.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Partners ============ -->
+<section class="py-10 bg-[var(--cream-deep)] border-y border-[var(--pine)]/10 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+    <p class="text-center text-xs uppercase tracking-widest text-[var(--gray)] mb-6">Tecnología y marcas de referencia</p>
+    <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-4">
+      <span class="font-display text-2xl text-[var(--pine)]/50 italic">Straumann</span>
+      <span class="font-display text-2xl text-[var(--pine)]/50 italic">iTero</span>
+      <span class="font-display text-2xl text-[var(--pine)]/50 italic">SprintRay</span>
+      <span class="font-display text-2xl text-[var(--pine)]/50 italic">Invisalign</span>
+      <span class="font-display text-2xl text-[var(--pine)]/50 italic">Radiología 3D</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRATAMIENTOS ============ -->
+<section id="tratamientos" class="py-28 md:py-36 relative">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-20 reveal">
+      <div class="divider-leaf mb-6 max-w-[200px] mx-auto"><span class="text-xs uppercase tracking-widest">Tratamientos</span></div>
+      <h2 class="font-display font-light text-5xl md:text-6xl text-[var(--pine-deep)] leading-[1.05] mb-6">
+        Todos los servicios dentales en un <span class="italic">solo lugar</span>
+      </h2>
+      <p class="text-lg text-[var(--gray)]">
+        Desde una revisión general hasta cirugía guiada de implantes, ofrecemos soluciones integrales con tecnología moderna y profesionales especializados.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <div class="service-lux rounded-2xl p-10 reveal cursor-pointer" role="button" tabindex="0" aria-haspopup="dialog" onclick="openModal('implantes')">
+        <div class="flex items-start justify-between mb-6">
+          <span class="svc-lux-num font-display text-sm text-[var(--gray-soft)] tracking-widest">01 — IMPLANTOLOGÍA</span>
+          <i data-lucide="anchor" class="w-6 h-6 text-[var(--gold)]"></i>
+        </div>
+        <h3 class="font-display text-3xl text-[var(--pine-deep)] mb-4">Implantes dentales guiados</h3>
+        <p class="text-[var(--gray)] leading-relaxed mb-8">Planificación digital, cirugía guiada y marcas de referencia como Straumann para resultados que duran toda la vida.</p>
+        <span class="svc-lux-btn inline-flex items-center text-sm font-medium text-[var(--gray)]">Ver detalles <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </div>
+
+      <div class="service-lux rounded-2xl p-10 reveal reveal-delay-1 cursor-pointer" role="button" tabindex="0" aria-haspopup="dialog" onclick="openModal('ortodoncia')">
+        <div class="flex items-start justify-between mb-6">
+          <span class="svc-lux-num font-display text-sm text-[var(--gray-soft)] tracking-widest">02 — ORTODONCIA</span>
+          <i data-lucide="smile" class="w-6 h-6 text-[var(--gold)]"></i>
+        </div>
+        <h3 class="font-display text-3xl text-[var(--pine-deep)] mb-4">Ortodoncia e Invisalign</h3>
+        <p class="text-[var(--gray)] leading-relaxed mb-8">Estudio digital, alineadores invisibles y tratamientos diseñados para mejorar sonrisa y función.</p>
+        <span class="svc-lux-btn inline-flex items-center text-sm font-medium text-[var(--gray)]">Ver detalles <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </div>
+
+      <div class="service-lux rounded-2xl p-10 reveal cursor-pointer" role="button" tabindex="0" aria-haspopup="dialog" onclick="openModal('periodoncia')">
+        <div class="flex items-start justify-between mb-6">
+          <span class="svc-lux-num font-display text-sm text-[var(--gray-soft)] tracking-widest">03 — PERIODONCIA</span>
+          <i data-lucide="shield-check" class="w-6 h-6 text-[var(--gold)]"></i>
+        </div>
+        <h3 class="font-display text-3xl text-[var(--pine-deep)] mb-4">Periodoncia</h3>
+        <p class="text-[var(--gray)] leading-relaxed mb-8">Cuidado de encías, control de inflamación y mantenimiento periodontal para proteger tus dientes.</p>
+        <span class="svc-lux-btn inline-flex items-center text-sm font-medium text-[var(--gray)]">Ver detalles <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </div>
+
+      <div class="service-lux rounded-2xl p-10 reveal reveal-delay-1 cursor-pointer" role="button" tabindex="0" aria-haspopup="dialog" onclick="openModal('endodoncia')">
+        <div class="flex items-start justify-between mb-6">
+          <span class="svc-lux-num font-display text-sm text-[var(--gray-soft)] tracking-widest">04 — ENDODONCIA</span>
+          <i data-lucide="activity" class="w-6 h-6 text-[var(--gold)]"></i>
+        </div>
+        <h3 class="font-display text-3xl text-[var(--pine-deep)] mb-4">Endodoncia</h3>
+        <p class="text-[var(--gray)] leading-relaxed mb-8">Tratamientos de conductos enfocados en conservar piezas dentales y aliviar molestias.</p>
+        <span class="svc-lux-btn inline-flex items-center text-sm font-medium text-[var(--gray)]">Ver detalles <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </div>
+
+      <div class="service-lux rounded-2xl p-10 reveal cursor-pointer" role="button" tabindex="0" aria-haspopup="dialog" onclick="openModal('cirugia')">
+        <div class="flex items-start justify-between mb-6">
+          <span class="svc-lux-num font-display text-sm text-[var(--gray-soft)] tracking-widest">05 — CIRUGÍA ORAL</span>
+          <i data-lucide="scissors" class="w-6 h-6 text-[var(--gold)]"></i>
+        </div>
+        <h3 class="font-display text-3xl text-[var(--pine-deep)] mb-4">Cirugía oral</h3>
+        <p class="text-[var(--gray)] leading-relaxed mb-8">Extracciones, cirugía avanzada y procedimientos planificados con criterios de seguridad.</p>
+        <span class="svc-lux-btn inline-flex items-center text-sm font-medium text-[var(--gray)]">Ver detalles <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </div>
+
+      <div class="service-lux rounded-2xl p-10 reveal reveal-delay-1 cursor-pointer" role="button" tabindex="0" aria-haspopup="dialog" onclick="openModal('general')">
+        <div class="flex items-start justify-between mb-6">
+          <span class="svc-lux-num font-display text-sm text-[var(--gray-soft)] tracking-widest">06 — ODONTOLOGÍA GENERAL</span>
+          <i data-lucide="stethoscope" class="w-6 h-6 text-[var(--gold)]"></i>
+        </div>
+        <h3 class="font-display text-3xl text-[var(--pine-deep)] mb-4">Odontología general</h3>
+        <p class="text-[var(--gray)] leading-relaxed mb-8">Revisiones, limpiezas, empastes y prevención para toda la familia.</p>
+        <span class="svc-lux-btn inline-flex items-center text-sm font-medium text-[var(--gray)]">Ver detalles <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </div>
+
+      <div class="service-lux rounded-2xl p-10 reveal cursor-pointer" role="button" tabindex="0" aria-haspopup="dialog" onclick="openModal('estetica')">
+        <div class="flex items-start justify-between mb-6">
+          <span class="svc-lux-num font-display text-sm text-[var(--gray-soft)] tracking-widest">07 — ESTÉTICA DENTAL</span>
+          <i data-lucide="sparkles" class="w-6 h-6 text-[var(--gold)]"></i>
+        </div>
+        <h3 class="font-display text-3xl text-[var(--pine-deep)] mb-4">Estética dental</h3>
+        <p class="text-[var(--gray)] leading-relaxed mb-8">Mejora del color, forma y armonía de la sonrisa con un enfoque natural.</p>
+        <span class="svc-lux-btn inline-flex items-center text-sm font-medium text-[var(--gray)]">Ver detalles <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </div>
+
+      <div class="service-lux rounded-2xl p-10 reveal reveal-delay-1 cursor-pointer" role="button" tabindex="0" aria-haspopup="dialog" onclick="openModal('protesis')">
+        <div class="flex items-start justify-between mb-6">
+          <span class="svc-lux-num font-display text-sm text-[var(--gray-soft)] tracking-widest">08 — PRÓTESIS</span>
+          <i data-lucide="layers" class="w-6 h-6 text-[var(--gold)]"></i>
+        </div>
+        <h3 class="font-display text-3xl text-[var(--pine-deep)] mb-4">Prótesis y rehabilitación</h3>
+        <p class="text-[var(--gray)] leading-relaxed mb-8">Soluciones para recuperar función, estética y comodidad al masticar.</p>
+        <span class="svc-lux-btn inline-flex items-center text-sm font-medium text-[var(--gray)]">Ver detalles <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EQUIPO — iconos de doctor/a · las fotos aparecerán solas ============ -->
+<section id="equipo" class="py-28 md:py-36 bg-[var(--cream-deep)] relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+    <div class="text-center max-w-2xl mx-auto mb-20 reveal">
+      <div class="divider-leaf mb-6 max-w-[200px] mx-auto"><span class="text-xs uppercase tracking-widest">Nuestro Equipo</span></div>
+      <h2 class="font-display font-light text-5xl md:text-6xl text-[var(--pine-deep)] leading-[1.05] mb-6">
+        Especialistas en cada <span class="italic">detalle</span>
+      </h2>
+      <p class="text-lg text-[var(--gray)]">
+        Un equipo multidisciplinar formado en las mejores universidades, dedicado a ofrecerte la mejor atención.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Dra. Cristina Laguna — mujer -->
+      <div class="team-card reveal">
+        <div class="team-photo-frame mb-5">
+          <div class="photo-fallback">
+            <svg width="128" height="128" aria-hidden="true"><use href="#dr-woman"/></svg>
+          </div>
+          <!-- Foto futura: img/equipo/cristina-laguna.jpg -->
+          <img src="img/equipo/cristina-laguna.jpg" alt="Dra. Cristina Laguna" class="absolute inset-0" loading="lazy" decoding="async" onerror="this.remove()">
+          <div class="team-photo-overlay">
+            <span class="text-sm font-medium text-[var(--cream-light)] tracking-wider uppercase">Ortodoncia · Directora</span>
+          </div>
+        </div>
+        <h3 class="font-display text-xl text-[var(--pine-deep)] mb-1">Dra. Cristina Laguna</h3>
+        <p class="text-sm text-[var(--gray)]">Ortodoncista especialista en Invisalign y alineadores invisibles.</p>
+      </div>
+
+      <!-- Dr. Sahand — hombre -->
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-photo-frame mb-5">
+          <div class="photo-fallback">
+            <svg width="128" height="128" aria-hidden="true"><use href="#dr-man"/></svg>
+          </div>
+          <!-- Foto futura: img/equipo/sahand.jpg -->
+          <img src="img/equipo/sahand.jpg" alt="Dr. Sahand Shirzadi Maryan" class="absolute inset-0" loading="lazy" decoding="async" onerror="this.remove()">
+          <div class="team-photo-overlay">
+            <span class="text-sm font-medium text-[var(--cream-light)] tracking-wider uppercase">Periodoncia · Implantología</span>
+          </div>
+        </div>
+        <h3 class="font-display text-xl text-[var(--pine-deep)] mb-1">Dr. Sahand Shirzadi Maryan</h3>
+        <p class="text-sm text-[var(--gray)]">MSc Univ. de Barcelona. Experto en cirugía mucogingival e injertos.</p>
+      </div>
+
+      <!-- Cirujano Oral — hombre -->
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-photo-frame mb-5">
+          <div class="photo-fallback">
+            <svg width="128" height="128" aria-hidden="true"><use href="#dr-man"/></svg>
+          </div>
+          <!-- Foto futura: img/equipo/cirujano-oral.jpg -->
+          <img src="img/equipo/cirujano-oral.jpg" alt="Cirujano oral de la clínica" class="absolute inset-0" loading="lazy" decoding="async" onerror="this.remove()">
+          <div class="team-photo-overlay">
+            <span class="text-sm font-medium text-[var(--cream-light)] tracking-wider uppercase">Cirugía Oral</span>
+          </div>
+        </div>
+        <h3 class="font-display text-xl text-[var(--pine-deep)] mb-1">Dr. Mishra</h3>
+        <p class="text-sm text-[var(--gray)]">Especialista en cirugía avanzada y extracciones complejas.</p>
+      </div>
+
+      <!-- Dr. Eric — hombre -->
+      <div class="team-card reveal reveal-delay-3">
+        <div class="team-photo-frame mb-5">
+          <div class="photo-fallback">
+            <svg width="128" height="128" aria-hidden="true"><use href="#dr-man"/></svg>
+          </div>
+          <!-- Foto futura: img/equipo/eric.jpg -->
+          <img src="img/equipo/eric.jpg" alt="Dr. Eric, especialista en endodoncia" class="absolute inset-0" loading="lazy" decoding="async" onerror="this.remove()">
+          <div class="team-photo-overlay">
+            <span class="text-sm font-medium text-[var(--cream-light)] tracking-wider uppercase">Endodoncia</span>
+          </div>
+        </div>
+        <h3 class="font-display text-xl text-[var(--pine-deep)] mb-1">Dr. Eric</h3>
+        <p class="text-sm text-[var(--gray)]">Especialista en tratamientos de conductos y microscopio dental.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECNOLOGÍA — auto-swap con img/tecnologia.jpg ============ -->
+<section id="tecnologia" class="py-28 md:py-36 bg-[var(--pine)] relative overflow-hidden">
+  <div class="blob" style="width:600px;height:600px;background:var(--sage);opacity:.2;top:-200px;left:-200px;"></div>
+  <div class="blob" style="width:500px;height:500px;background:var(--gold);opacity:.1;bottom:-200px;right:-100px;"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal">
+        <div class="relative">
+          <div class="relative aspect-[4/5] rounded-3xl overflow-hidden bg-[var(--pine-deep)]">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i data-lucide="scan-line" class="w-24 h-24 text-[var(--gold-light)] opacity-30"></i>
+            </div>
+            <!-- Foto futura: img/tecnologia.jpg -->
+            <img src="img/tecnologia.jpg" alt="Escáner intraoral iTero y flujo digital de la clínica" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" onerror="this.remove()">
+          </div>
+          <div class="absolute -bottom-10 -right-10 bg-[var(--cream-light)] rounded-2xl p-6 shadow-2xl max-w-[280px] hidden md:block">
+            <div class="flex items-center gap-3 mb-3">
+              <i data-lucide="badge-check" class="w-6 h-6 text-[var(--gold)]"></i>
+              <span class="text-xs uppercase tracking-widest text-[var(--gray)]">Calidad Straumann</span>
+            </div>
+            <p class="text-sm text-[var(--pine-deep)] leading-relaxed">Implantes de la más alta calidad a precios competitivos, con garantía de mantenimiento.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <div class="divider-leaf mb-6 max-w-[200px]"><span class="text-xs uppercase tracking-widest">Tecnología de Vanguardia</span></div>
+        <h2 class="font-display font-light text-5xl md:text-6xl text-[var(--cream-light)] leading-[1.05] mb-8">
+          Equipados con <span class="italic text-[var(--gold-light)]">tecnología de vanguardia</span> en cada detalle.
+        </h2>
+        <p class="text-lg text-[var(--cream-light)]/90 leading-relaxed mb-6">
+          Nuestra clínica cuenta con un flujo de trabajo 100% digital. Realizamos la mayoría de los tratamientos planificándolos en 3 dimensiones, lo que nos permite ser precisos, predecibles y mínimamente invasivos.
+        </p>
+        <p class="text-base text-[var(--cream-light)]/80 leading-relaxed mb-10">
+          No solo colocamos implantes: lo más importante es el mantenimiento. Planificamos en 3D y aseguramos que ese implante pueda vivir mucho tiempo, controlando cada caso anualmente.
+        </p>
+
+        <div class="grid grid-cols-2 gap-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="scan-line" class="w-5 h-5 text-[var(--gold-light)]"></i>
+            </div>
+            <div>
+              <h4 class="font-display text-lg text-[var(--cream-light)] mb-1">Escáner iTero</h4>
+              <p class="text-sm text-[var(--cream-light)]/70">Adiós a los moldes incómodos. Digitalización milimétrica de tu boca.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="radiation" class="w-5 h-5 text-[var(--gold-light)]"></i>
+            </div>
+            <div>
+              <h4 class="font-display text-lg text-[var(--cream-light)] mb-1">Radiología 3D (TAC)</h4>
+              <p class="text-sm text-[var(--cream-light)]/70">Servicio completo de radiología y TAC 3D de alta precisión in situ.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="printer" class="w-5 h-5 text-[var(--gold-light)]"></i>
+            </div>
+            <div>
+              <h4 class="font-display text-lg text-[var(--cream-light)] mb-1">Impresión SprintRay</h4>
+              <p class="text-sm text-[var(--cream-light)]/70">Impresión 3D de alta precisión para cirugías guiadas y férulas.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="shield-check" class="w-5 h-5 text-[var(--gold-light)]"></i>
+            </div>
+            <div>
+              <h4 class="font-display text-lg text-[var(--cream-light)] mb-1">Mantenimiento Garantizado</h4>
+              <p class="text-sm text-[var(--cream-light)]/70">Control anual meticuloso para asegurar la vida útil de tus implantes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPINIONES ============ -->
+<section id="opiniones" class="py-28 md:py-36 bg-[var(--cream)] overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 mb-16">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <div class="divider-leaf mb-6 max-w-[200px] mx-auto"><span class="text-xs uppercase tracking-widest">Opiniones de Google</span></div>
+      <h2 class="font-display font-light text-5xl md:text-6xl text-[var(--pine-deep)] leading-[1.05] mb-6">
+        5.0 / 5.0 en <span class="italic">Google</span>
+      </h2>
+      <div class="flex items-center justify-center gap-2 mb-4" aria-hidden="true">
+        <i data-lucide="star" class="w-6 h-6 fill-[var(--gold)] text-[var(--gold)]"></i>
+        <i data-lucide="star" class="w-6 h-6 fill-[var(--gold)] text-[var(--gold)]"></i>
+        <i data-lucide="star" class="w-6 h-6 fill-[var(--gold)] text-[var(--gold)]"></i>
+        <i data-lucide="star" class="w-6 h-6 fill-[var(--gold)] text-[var(--gold)]"></i>
+        <i data-lucide="star" class="w-6 h-6 fill-[var(--gold)] text-[var(--gold)]"></i>
+      </div>
+      <p class="text-lg text-[var(--gray)] mb-4">
+        El esfuerzo, la dedicación y el amor con el que trabajamos se refleja en las palabras de nuestros pacientes.
+      </p>
+      <!-- TODO: tu perfil real de Google Business -->
+      <a href="https://g.page/r/TU-PERFIL-GOOGLE" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-medium text-[var(--pine)] hover:text-[var(--gold)] transition-colors">
+        Leer todas las reseñas en Google <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="marquee-reviews reveal reveal-delay-1">
+    <div class="marquee-track-reviews" id="marqueeSource">
+
+      <article class="bg-[var(--cream-light)] rounded-2xl p-8 shadow-sm border border-[var(--pine)]/10 w-[400px] flex-shrink-0">
+        <div class="flex mb-4" aria-label="5 estrellas"> <i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i> </div>
+        <p class="text-[var(--charcoal)] leading-relaxed mb-6 text-sm">"Fuí por primera vez y no será la última. La Dra. Laguna, a parte de ser una bellísima persona, la cualificaría de una gran profesional. Se mira a milímetro todo el procedimiento a realizar desde el principio al final..."</p>
+        <div class="flex items-center gap-3"> <div class="w-10 h-10 rounded-full bg-[var(--sage)] flex items-center justify-center text-[var(--cream-light)] font-display" aria-hidden="true">M</div> <div><div class="font-medium text-[var(--pine-deep)]">Mont Lloret</div><div class="text-xs text-[var(--gray)]">hace 5 meses</div></div> </div>
+      </article>
+
+      <article class="bg-[var(--cream-light)] rounded-2xl p-8 shadow-sm border border-[var(--pine)]/10 w-[400px] flex-shrink-0">
+        <div class="flex mb-4" aria-label="5 estrellas"> <i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i> </div>
+        <p class="text-[var(--charcoal)] leading-relaxed mb-6 text-sm">"¡La mejor clínica que podíamos encontrar! Yo ahora vivo en Girona y siempre que necesito ir al dentista bajo expresamente a Badalona en las mejores manos. Trato cercano, en una clínica nueva súper acogedora. Cris es muy profesional..."</p>
+        <div class="flex items-center gap-3"> <div class="w-10 h-10 rounded-full bg-[var(--gold)] flex items-center justify-center text-[var(--cream-light)] font-display" aria-hidden="true">X</div> <div><div class="font-medium text-[var(--pine-deep)]">Xènia</div><div class="text-xs text-[var(--gray)]">hace un año</div></div> </div>
+      </article>
+
+      <article class="bg-[var(--cream-light)] rounded-2xl p-8 shadow-sm border border-[var(--pine)]/10 w-[400px] flex-shrink-0">
+        <div class="flex mb-4" aria-label="5 estrellas"> <i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i> </div>
+        <p class="text-[var(--charcoal)] leading-relaxed mb-6 text-sm">"Jamás había vivido una experiencia tan excelente en un dentista. La dueña es la que hace ella misma el trabajo, me enseñaba cada paso que hacía, me explicaban todo en cada momento, por fotos y vídeos... el esfuerzo y dedicación y sobretodo el amor con el que trabaja no tiene precio."</p>
+        <div class="flex items-center gap-3"> <div class="w-10 h-10 rounded-full bg-[var(--pine)] flex items-center justify-center text-[var(--cream-light)] font-display" aria-hidden="true">B</div> <div><div class="font-medium text-[var(--pine-deep)]">B Bjg</div><div class="text-xs text-[var(--gray)]">Cliente verificado</div></div> </div>
+      </article>
+
+      <article class="bg-[var(--cream-light)] rounded-2xl p-8 shadow-sm border border-[var(--pine)]/10 w-[400px] flex-shrink-0">
+        <div class="flex mb-4" aria-label="5 estrellas"> <i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i> </div>
+        <p class="text-[var(--charcoal)] leading-relaxed mb-6 text-sm">"Venimos de Gavá a esta clínica dental porque la Dra. Laguna es una gran profesional, dispensa siempre un trato muy agradable y explica en detalle el tratamiento que te hace. Estamos muy contentos con los resultados de los tratamientos de ortodoncia de mis dos hijas."</p>
+        <div class="flex items-center gap-3"> <div class="w-10 h-10 rounded-full bg-[var(--sage-soft)] flex items-center justify-center text-[var(--pine-deep)] font-display" aria-hidden="true">E</div> <div><div class="font-medium text-[var(--pine-deep)]">Eva Malpartida</div><div class="text-xs text-[var(--gray)]">hace un año</div></div> </div>
+      </article>
+
+      <article class="bg-[var(--cream-light)] rounded-2xl p-8 shadow-sm border border-[var(--pine)]/10 w-[400px] flex-shrink-0">
+        <div class="flex mb-4" aria-label="5 estrellas"> <i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i> </div>
+        <p class="text-[var(--charcoal)] leading-relaxed mb-6 text-sm">"Hoy nos hemos visitado con la Dra Laguna y sus colaboradores, nos hemos sentido como en casa. Las instalaciones son muy agradables, la tecnología que utilizan está súper actualizada y se respira un ambiente muy relajado. Más que recomendable para los más pequeños y para todos los adultos!!"</p>
+        <div class="flex items-center gap-3"> <div class="w-10 h-10 rounded-full bg-[var(--sage)] flex items-center justify-center text-[var(--cream-light)] font-display" aria-hidden="true">L</div> <div><div class="font-medium text-[var(--pine-deep)]">Laura Ravés</div><div class="text-xs text-[var(--gray)]">hace 2 años</div></div> </div>
+      </article>
+
+      <article class="bg-[var(--cream-light)] rounded-2xl p-8 shadow-sm border border-[var(--pine)]/10 w-[400px] flex-shrink-0">
+        <div class="flex mb-4" aria-label="5 estrellas"> <i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i> </div>
+        <p class="text-[var(--charcoal)] leading-relaxed mb-6 text-sm">"Me recomendaron esta clínica después de que otra supuesta clínica prestigiosa me rechazara porque un implante falló. Tanto la Dra. Laguna como el cirujano me explicaron el tratamiento y la planificación para la regeneración ósea y colocar un nuevo implante. Soy de Granollers, pero estoy muy contento con ellos... muy recomendable."</p>
+        <div class="flex items-center gap-3"> <div class="w-10 h-10 rounded-full bg-[var(--gold)] flex items-center justify-center text-[var(--cream-light)] font-display" aria-hidden="true">I</div> <div><div class="font-medium text-[var(--pine-deep)]">Ivan Maya</div><div class="text-xs text-[var(--gray)]">hace un año</div></div> </div>
+      </article>
+
+      <article class="bg-[var(--cream-light)] rounded-2xl p-8 shadow-sm border border-[var(--pine)]/10 w-[400px] flex-shrink-0">
+        <div class="flex mb-4" aria-label="5 estrellas"> <i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i><i data-lucide="star" class="w-5 h-5 fill-[var(--gold)] text-[var(--gold)]"></i> </div>
+        <p class="text-[var(--charcoal)] leading-relaxed mb-6 text-sm">"El mejor dentista al que he ido. He llevado brackets tres veces en mi vida. Las dos primeras veces fueron muy caras y no hicieron un buen trabajo, pero la tercera vez, cuando fui a esta clínica, me sorprendieron los precios. Es un lugar asequible y profesional, e hicieron un gran trabajo con mi sonrisa."</p>
+        <div class="flex items-center gap-3"> <div class="w-10 h-10 rounded-full bg-[var(--pine)] flex items-center justify-center text-[var(--cream-light)] font-display" aria-hidden="true">P</div> <div><div class="font-medium text-[var(--pine-deep)]">Paula Rodriguez</div><div class="text-xs text-[var(--gray)]">hace un año</div></div> </div>
+      </article>
+
+    </div>
+    <!-- El duplicado del loop lo genera el JS -->
+    <div class="marquee-track-reviews" id="marqueeClone" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ============ CITA + CONTACTO ============ -->
+<section id="contacto" class="py-28 md:py-36 bg-[var(--cream-deep)] relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+    <div class="text-center max-w-2xl mx-auto mb-20 reveal">
+      <div class="divider-leaf mb-6 max-w-[200px] mx-auto"><span class="text-xs uppercase tracking-widest">Contacto</span></div>
+      <h2 class="font-display font-light text-5xl md:text-6xl text-[var(--pine-deep)] leading-[1.05] mb-6">
+        Reserva tu <span class="italic">primera visita</span>
+      </h2>
+      <p class="text-lg text-[var(--gray)]">
+        Cuéntanos qué necesitas y te confirmamos cita en minutos por WhatsApp.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+
+      <!-- Formulario → envía por WhatsApp (sin servidor).
+           💡 Opcional: sustitúyelo por el embed de Doctoralia / Clínica Cloud -->
+      <div id="cita" class="reveal">
+        <div class="bg-[var(--cream-light)] rounded-3xl p-8 md:p-12 border border-[var(--pine)]/10 shadow-xl">
+          <h3 class="font-display text-3xl text-[var(--pine-deep)] mb-2">Pide tu cita</h3>
+          <p class="text-sm text-[var(--gray)] mb-8">Rellena el formulario y se abrirá WhatsApp con tu solicitud lista para enviar.</p>
+
+          <form id="citaForm" novalidate>
+            <div class="mb-6">
+              <label for="fNombre" class="block text-xs uppercase tracking-widest text-[var(--gray)] mb-1">Nombre *</label>
+              <input type="text" id="fNombre" name="nombre" class="input-field" placeholder="Tu nombre y apellido" required autocomplete="name">
+            </div>
+            <div class="mb-6">
+              <label for="fTelefono" class="block text-xs uppercase tracking-widest text-[var(--gray)] mb-1">Teléfono *</label>
+              <input type="tel" id="fTelefono" name="telefono" class="input-field" placeholder="600 000 000" required autocomplete="tel">
+            </div>
+            <div class="mb-6">
+              <label for="fTratamiento" class="block text-xs uppercase tracking-widest text-[var(--gray)] mb-1">Tratamiento</label>
+              <select id="fTratamiento" name="tratamiento" class="input-field bg-transparent">
+                <option value="Primera visita / revisión">Primera visita / revisión</option>
+                <option value="Implantes dentales">Implantes dentales</option>
+                <option value="Ortodoncia / Invisalign">Ortodoncia / Invisalign</option>
+                <option value="Periodoncia">Periodoncia</option>
+                <option value="Endodoncia">Endodoncia</option>
+                <option value="Cirugía oral">Cirugía oral</option>
+                <option value="Estética dental">Estética dental</option>
+                <option value="Prótesis">Prótesis</option>
+                <option value="Odontología general">Odontología general</option>
+              </select>
+            </div>
+            <div class="mb-6">
+              <label for="fMensaje" class="block text-xs uppercase tracking-widest text-[var(--gray)] mb-1">Mensaje</label>
+              <textarea id="fMensaje" name="mensaje" rows="2" class="input-field resize-none" placeholder="¿Algo que debamos saber? (opcional)"></textarea>
+            </div>
+
+            <!-- Consentimiento RGPD obligatorio (datos de salud = categoría especial) -->
+            <label class="flex items-start gap-3 mb-8 cursor-pointer">
+              <input type="checkbox" id="fConsent" required class="mt-1 w-4 h-4 accent-[var(--pine)] flex-shrink-0">
+              <span class="text-xs text-[var(--gray)] leading-relaxed">
+                He leído y acepto la <a href="legal/politica-privacidad.html" class="underline text-[var(--pine)]">política de privacidad</a>. Autorizo el tratamiento de mis datos, incluidos datos de salud, para gestionar mi cita.
+              </span>
+            </label>
+
+            <button type="submit" class="btn-whatsapp w-full px-6 py-4 rounded-full text-sm font-medium inline-flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              Enviar solicitud por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Info + Mapa -->
+      <div class="reveal reveal-delay-1 flex flex-col gap-8">
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="bg-[var(--cream-light)] rounded-2xl p-6 border border-[var(--pine)]/10">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-[var(--sage)]/20 flex items-center justify-center"><i data-lucide="map-pin" class="w-5 h-5 text-[var(--pine)]"></i></div>
+              <h4 class="font-display text-lg text-[var(--pine-deep)]">Dirección</h4>
+            </div>
+            <p class="text-sm text-[var(--gray)] leading-relaxed">
+              <!-- TODO: dirección real -->
+              Calle Ejemplo, 1, 2º<br>08911 Badalona, Barcelona
+            </p>
+          </div>
+          <div class="bg-[var(--cream-light)] rounded-2xl p-6 border border-[var(--pine)]/10">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-[var(--sage)]/20 flex items-center justify-center"><i data-lucide="phone" class="w-5 h-5 text-[var(--pine)]"></i></div>
+              <h4 class="font-display text-lg text-[var(--pine-deep)]">Contacto</h4>
+            </div>
+            <p class="text-sm text-[var(--gray)] leading-relaxed">
+              <a href="tel:+34652540903" class="hover:text-[var(--pine)] transition-colors">+34 652 54 09 03</a><br>
+              <a href="mailto:info@dralaguna.es" class="hover:text-[var(--pine)] transition-colors">info@dralaguna.es</a> <!-- TODO: email real -->
+            </p>
+          </div>
+          <div class="sm:col-span-2 bg-[var(--cream-light)] rounded-2xl p-6 border border-[var(--pine)]/10">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-full bg-[var(--sage)]/20 flex items-center justify-center"><i data-lucide="clock" class="w-5 h-5 text-[var(--pine)]"></i></div>
+              <h4 class="font-display text-lg text-[var(--pine-deep)]">Horario</h4>
+            </div>
+            <p class="text-sm text-[var(--gray)] leading-relaxed">
+              <!-- TODO: horario real -->
+              Lunes a Viernes: 9:00 – 20:00<br>
+              Sábados: cerrado
+            </p>
+          </div>
+        </div>
+
+        <div class="map-frame flex-1">
+          <!-- TODO: sustituye por TU iframe exacto: Google Maps → Compartir → Insertar un mapa -->
+          <iframe
+            src="https://maps.google.com/maps?q=Badalona%2C%20Barcelona&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            title="Ubicación de la Clínica Dental Dra. Laguna en Badalona"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-[var(--pine-deep)] text-[var(--cream-light)] pt-20 pb-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid md:grid-cols-3 gap-12 mb-14">
+      <div>
+        <a href="#inicio" class="font-display text-2xl font-medium tracking-tight flex items-center gap-2 mb-4">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 4C16 4 8 10 8 18C8 23.5 12 28 16 28C20 28 24 23.5 24 18C24 10 16 4 16 4Z" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16 12V20M12 16H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          Dra. Laguna
+        </a>
+        <p class="text-sm text-[var(--cream-light)]/60 leading-relaxed max-w-xs">
+          Clínica dental en Badalona. Implantes guiados, Invisalign, estética dental y flujo 100% digital con un trato cercano.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-xs uppercase tracking-widest text-[var(--gold-light)] mb-5">Tratamientos</h4>
+        <ul class="space-y-3 text-sm text-[var(--cream-light)]/70">
+          <li><a href="#tratamientos" class="hover:text-[var(--cream-light)] transition-colors">Implantes dentales guiados</a></li>
+          <li><a href="#tratamientos" class="hover:text-[var(--cream-light)] transition-colors">Ortodoncia e Invisalign</a></li>
+          <li><a href="#tratamientos" class="hover:text-[var(--cream-light)] transition-colors">Estética dental</a></li>
+          <li><a href="#tratamientos" class="hover:text-[var(--cream-light)] transition-colors">Odontología general</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xs uppercase tracking-widest text-[var(--gold-light)] mb-5">Contacto</h4>
+        <ul class="space-y-3 text-sm text-[var(--cream-light)]/70">
+          <li><a href="tel:+34652540903" class="hover:text-[var(--cream-light)] transition-colors">+34 652 54 09 03</a></li>
+          <li><a href="https://wa.me/34652540903" target="_blank" rel="noopener" class="hover:text-[var(--cream-light)] transition-colors">WhatsApp directo</a></li>
+          <li>Badalona, Barcelona</li>
+          <li>L–V: 9:00 – 20:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-xs text-[var(--cream-light)]/50">© <span id="year"></span> Clínica Dental Dra. Laguna. Todos los derechos reservados.</p>
+      <div class="flex gap-6 text-xs text-[var(--cream-light)]/50">
+        <!-- TODO: crea estas 3 páginas legales -->
+        <a href="legal/aviso-legal.html" class="hover:text-[var(--cream-light)] transition-colors">Aviso legal</a>
+        <a href="legal/politica-privacidad.html" class="hover:text-[var(--cream-light)] transition-colors">Privacidad</a>
+        <a href="legal/politica-cookies.html" class="hover:text-[var(--cream-light)] transition-colors">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Banner cookies RGPD -->
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-label="Aviso de cookies">
+  <p class="text-sm text-[var(--charcoal)] leading-relaxed mb-4">
+    Usamos cookies técnicas para que la web funcione correctamente. Las <a href="legal/politica-cookies.html" class="underline text-[var(--pine)]">cookies opcionales</a> (analítica, marketing) solo se activan si las aceptas.
+  </p>
+  <div class="flex gap-3">
+    <button id="cookieAccept" class="btn-primary flex-1 px-4 py-2.5 rounded-full text-xs font-medium"><span>Aceptar</span></button>
+    <button id="cookieReject" class="btn-outline flex-1 px-4 py-2.5 rounded-full text-xs font-medium">Rechazar</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ── Marquee: clona las reseñas para el loop infinito ── */
+  const src = document.getElementById('marqueeSource');
+  document.getElementById('marqueeClone').innerHTML = src.innerHTML;
+
+  /* ── Iconos ── */
+  lucide.createIcons();
+
+  /* ── Navbar: fondo blur al hacer scroll ── */
+  const navbar = document.getElementById('navbar');
+  const onScroll = () => navbar.classList.toggle('nav-scrolled', window.scrollY > 40);
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  /* ── Menú móvil ── */
+  const menu = document.getElementById('mobileMenu');
+  const menuBtn = document.getElementById('menuBtn');
+  const openMenu = () => { menu.classList.add('open'); menuBtn.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; };
+  const closeMenu = () => { menu.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); document.body.style.overflow=''; };
+  menuBtn.addEventListener('click', openMenu);
+  document.getElementById('closeMenu').addEventListener('click', closeMenu);
+  document.querySelectorAll('.mobile-link').forEach(a => a.addEventListener('click', closeMenu));
+
+  /* ── Animaciones reveal ── */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold:.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* ── Datos de tratamientos ── */
+  const TREATMENTS = {
+    implantes: {
+      tag:'Implantología', icon:'anchor', title:'Implantes dentales guiados',
+      intro:'Recupera dientes perdidos con cirugía guiada por ordenador: planificamos cada implante en 3D antes de tocar un solo milímetro de tu boca. Precisión máxima, cirugía mínimamente invasiva y recuperación más rápida.',
+      items:['TAC 3D y planificación digital del caso','Cirugía guiada con guía impresa en 3D','Implantes Straumann, referencia mundial','Corona definitiva sobre el implante','Plan de mantenimiento anual personalizado']
+    },
+    ortodoncia: {
+      tag:'Ortodoncia', icon:'smile', title:'Ortodoncia e Invisalign',
+      intro:'Endereza tu sonrisa con alineadores casi invisibles. Estudiamos tu caso con escáner digital iTero y te mostramos el resultado antes de empezar.',
+      items:['Escaneo digital iTero, sin moldes','Simulación del resultado final','Alineadores Invisalign a medida','Revisión y seguimiento periódico','Fases de contención y retención']
+    },
+    periodoncia: {
+      tag:'Periodoncia', icon:'shield-check', title:'Periodoncia',
+      intro:'Las encías sanas son la base de toda sonrisa durable. Tratamos la inflamación y la enfermedad periodontal para proteger tus dientes y tus implantes a largo plazo.',
+      items:['Diagnóstico periodontal completo','Raspado y alisado radical','Cirugía mucogingival e injertos de encía','Mantenimiento periodontal regular']
+    },
+    endodoncia: {
+      tag:'Endodoncia', icon:'activity', title:'Endodoncia',
+      intro:'Cuando el nervio del diente se daña, el tratamiento de conductos puede salvarlo. Trabajamos con precisión para conservar tu pieza natural y eliminar el dolor.',
+      items:['Diagnóstico con radiografía periapical','Tratamiento de conductos','Retratamientos de conductos previos','Reconstrucción y poste del diente tratado']
+    },
+    cirugia: {
+      tag:'Cirugía Oral', icon:'scissors', title:'Cirugía oral',
+      intro:'Extracciones y procedimientos quirúrgicos planificados con criterios máximos de seguridad y comodidad, en muchos casos con guía 3D.',
+      items:['Extracciones simples y complejas','Extracción de cordales','Cirugía de frenillos','Cirugía guiada para implantes']
+    },
+    general: {
+      tag:'Odontología General', icon:'stethoscope', title:'Odontología general',
+      intro:'La base de todo: revisiones, higiene y prevención para toda la familia. Detectamos los problemas cuando aún son pequeños y sencillos de resolver.',
+      items:['Revisión y diagnóstico completo','Higiene y limpieza profesional','Empastes y reconstrucciones','Prevención para niños y adultos','Atención de urgencias dentales']
+    },
+    estetica: {
+      tag:'Estética Dental', icon:'sparkles', title:'Estética dental',
+      intro:'Mejora el color, la forma y la armonía de tu sonrisa con un enfoque natural: el objetivo es que nadie note "trabajo dental", solo una sonrisa preciosa.',
+      items:['Carillas dentales','Blanqueamiento profesional','Reconstrucciones estéticas','Diseño de sonrisa digital']
+    },
+    protesis: {
+      tag:'Prótesis', icon:'layers', title:'Prótesis y rehabilitación',
+      intro:'Recupera la función y la estética de tu boca con prótesis diseñadas con flujo 100% digital: más precisión, más comodidad y menos visitas.',
+      items:['Coronas y puentes','Prótesis híbridas sobre implantes','Prótesis removibles','Férulas de descarga','Diseño e impresión digital SprintRay']
+    }
+  };
+
+  /* ── Modal accesible con imagen auto-swap ── */
+  const overlay = document.getElementById('treatmentModal');
+  const modalImg = document.getElementById('modalImg');
+  const figIconWrap = document.getElementById('modalFigIconWrap');
+  const iconWrap = document.getElementById('modalIconWrap');
+  const closeBtn = overlay.querySelector('.modal-close');
+  let lastFocused = null;
+
+  window.openModal = function(id){
+    const t = TREATMENTS[id];
+    if(!t) return;
+    lastFocused = document.activeElement;
+
+    document.getElementById('modalTag').textContent = t.tag;
+    iconWrap.innerHTML = `<i data-lucide="${t.icon}" class="w-6 h-6"></i>`;
+    document.getElementById('modalTitle').textContent = t.title;
+    document.getElementById('modalIntro').textContent = t.intro;
+    document.getElementById('modalList').innerHTML = t.items.map(item =>
+      `<li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-[var(--gold)] flex-shrink-0 mt-0.5"></i><span class="text-[var(--charcoal)] text-sm leading-relaxed">${item}</span></li>`
+    ).join('');
+
+    // Icono del panel lateral (fallback mientras no haya foto)
+    figIconWrap.innerHTML = `<i data-lucide="${t.icon}" class="w-20 h-20 text-[var(--gold-light)] opacity-40"></i>`;
+
+    // WhatsApp con el tratamiento ya identificado
+    document.getElementById('modalWa').href =
+      'https://wa.me/34652540903?text=' + encodeURIComponent(`Hola, me gustaría más información sobre: ${t.title}`);
+
+    // Foto opcional: img/tratamientos/implantes.jpg · ortodoncia.jpg · periodoncia.jpg ·
+    // endodoncia.jpg · cirugia.jpg · general.jpg · estetica.jpg · protesis.jpg
+    // Si no existe, se ve el degradado con el icono. Si existe, la foto lo tapa sola.
+    modalImg.alt = t.title;
+    modalImg.style.display = 'none';
+    modalImg.onload = () => { modalImg.style.display = ''; };
+    modalImg.onerror = () => { modalImg.style.display = 'none'; };
+    modalImg.src = `img/tratamientos/${id}.jpg`;
+
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    lucide.createIcons();
+    closeBtn.focus();
+  };
+
+  window.closeModal = function(){
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+    if(lastFocused) lastFocused.focus();
+  };
+
+  overlay.addEventListener('click', e => { if(e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', e => {
+    if(e.key === 'Escape'){
+      if(overlay.classList.contains('active')) closeModal();
+      if(menu.classList.contains('open')) closeMenu();
+    }
+  });
+
+  /* Tarjetas de tratamiento operables con teclado (Enter / Espacio) */
+  document.querySelectorAll('.service-lux[role="button"]').forEach(card => {
+    card.addEventListener('keydown', e => {
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); card.click(); }
+    });
+  });
+
+  /* ── Formulario de cita → WhatsApp ── */
+  document.getElementById('citaForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const nombre = document.getElementById('fNombre').value.trim();
+    const tel = document.getElementById('fTelefono').value.trim();
+    const trato = document.getElementById('fTratamiento').value;
+    const msg = document.getElementById('fMensaje').value.trim();
+    const consent = document.getElementById('fConsent').checked;
+
+    if(!nombre || !tel){ alert('Por favor, indícanos tu nombre y teléfono.'); return; }
+    if(!consent){ alert('Necesitamos tu consentimiento para gestionar la solicitud.'); return; }
+
+    const text = `Hola Dra. Laguna, soy ${nombre} (tel. ${tel}).\nQuisiera pedir cita para: ${trato}.` + (msg ? `\n\n${msg}` : '');
+    window.open('https://wa.me/34652540903?text=' + encodeURIComponent(text), '_blank', 'noopener');
+  });
+
+  /* ── Banner cookies ── */
+  const banner = document.getElementById('cookieBanner');
+  if(!localStorage.getItem('dlCookieConsent')){
+    setTimeout(() => banner.classList.add('visible'), 1200);
+  }
+  const setConsent = v => { localStorage.setItem('dlCookieConsent', v); banner.classList.remove('visible'); };
+  document.getElementById('cookieAccept').addEventListener('click', () => setConsent('accepted'));
+  document.getElementById('cookieReject').addEventListener('click', () => setConsent('rejected'));
+
+  /* ── Año dinámico ── */
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+
+</body>
+</html>
