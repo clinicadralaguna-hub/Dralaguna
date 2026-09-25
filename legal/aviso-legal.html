@@ -3,21 +3,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Aviso Legal | Clínica Dental Dra. Laguna</title>
 
   <meta
     name="description"
-    content="Aviso legal de Clínica Dental Dra. Laguna, Badalona, Barcelona."
-  >
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap"
-    rel="stylesheet"
+    content="Aviso legal de Clínica Dental Dra. Laguna en Badalona, Barcelona."
   >
 
   <style>
@@ -35,21 +31,21 @@
       box-sizing: border-box;
     }
 
-    body {
-      margin: 0;
-      font-family: "DM Sans", sans-serif;
-      background: var(--cream);
-      color: var(--charcoal);
-      line-height: 1.7;
+    html {
+      scroll-behavior: smooth;
     }
 
-    .font-display {
-      font-family: "Fraunces", serif;
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.75;
     }
 
     header {
       background: var(--pine);
-      color: var(--cream-light);
+      color: white;
       padding: 24px;
     }
 
@@ -62,42 +58,47 @@
       gap: 20px;
     }
 
-    .logo {
-      color: var(--cream-light);
+    .logo,
+    .back-link {
+      color: white;
       text-decoration: none;
-      font-family: "Fraunces", serif;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 24px;
     }
 
     .back-link {
-      color: var(--cream-light);
-      text-decoration: none;
       font-size: 14px;
     }
 
-    .back-link:hover {
+    .back-link:hover,
+    footer a:hover {
       text-decoration: underline;
     }
 
     main {
       max-width: 900px;
       margin: 0 auto;
-      padding: 70px 24px 90px;
+      padding: 60px 24px 90px;
     }
 
     h1 {
-      font-family: "Fraunces", serif;
-      color: var(--pine);
-      font-size: clamp(38px, 6vw, 60px);
-      line-height: 1.1;
-      margin: 0 0 20px;
+      margin: 0 0 16px;
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(38px, 6vw, 56px);
       font-weight: 400;
+      line-height: 1.15;
+
+      color: var(--pine);
     }
 
     .intro {
       color: var(--gray);
       font-size: 18px;
-      margin-bottom: 50px;
+      margin-bottom: 45px;
     }
 
     section {
@@ -105,11 +106,15 @@
     }
 
     h2 {
-      font-family: "Fraunces", serif;
-      color: var(--pine);
-      font-size: 28px;
-      font-weight: 400;
+      margin-top: 42px;
       margin-bottom: 16px;
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 27px;
+      font-weight: 400;
+      line-height: 1.3;
+
+      color: var(--pine);
     }
 
     p {
@@ -117,11 +122,12 @@
     }
 
     ul {
-      padding-left: 22px;
+      padding-left: 24px;
+      margin: 0 0 20px;
     }
 
     li {
-      margin-bottom: 8px;
+      margin-bottom: 9px;
     }
 
     a {
@@ -130,192 +136,710 @@
 
     .legal-data {
       background: var(--cream-light);
-      border: 1px solid rgba(28, 58, 46, 0.12);
+      border: 1px solid rgba(28, 58, 46, 0.14);
       border-radius: 18px;
+
       padding: 28px;
-      margin: 30px 0 50px;
+      margin: 28px 0 36px;
     }
 
     .legal-data p {
-      margin: 7px 0;
+      margin: 8px 0;
+    }
+
+    .notice {
+      margin: 25px 0;
+      padding: 16px 20px;
+
+      background: rgba(255, 255, 255, 0.45);
+      border-left: 4px solid var(--gold);
+    }
+
+    .updated {
+      color: var(--gray);
+      font-size: 14px;
+      margin-top: 50px;
     }
 
     footer {
       background: var(--pine-deep);
-      color: rgba(255, 255, 255, 0.7);
+      color: rgba(255, 255, 255, 0.75);
+
       text-align: center;
-      padding: 32px 20px;
-      font-size: 13px;
+      padding: 30px 20px;
+
+      font-size: 14px;
     }
 
     footer a {
       color: white;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    @media (max-width: 600px) {
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      main {
+        padding: 45px 20px 70px;
+      }
+
+      .legal-data {
+        padding: 21px;
+      }
     }
   </style>
 </head>
 
+
 <body>
 
 <header>
+
   <div class="header-inner">
-    <a href="../index.html" class="logo">Dra. Laguna</a>
-    <a href="../index.html" class="back-link">← Volver a la web</a>
+
+    <a
+      href="../index.html"
+      class="logo"
+    >
+      Clínica Dental Dra. Laguna
+    </a>
+
+    <a
+      href="../index.html"
+      class="back-link"
+    >
+      ← Volver a la web
+    </a>
+
   </div>
+
 </header>
+
 
 <main>
 
   <h1>Aviso Legal</h1>
 
   <p class="intro">
-    Información legal relativa al sitio web de Clínica Dental Dra. Laguna.
+    Información legal relativa al sitio web de
+    Clínica Dental Dra. Laguna.
   </p>
 
+
+  <!-- =====================================================
+       1. DATOS IDENTIFICATIVOS
+       ===================================================== -->
+
   <section>
-    <h2>1. Datos identificativos</h2>
+
+    <h2>1. Datos identificativos del titular</h2>
 
     <p>
-      En cumplimiento de la normativa aplicable a los servicios de la sociedad
-      de la información, se informa a los usuarios de los siguientes datos
-      identificativos del titular de este sitio web:
+      En cumplimiento de la Ley 34/2002, de 11 de julio,
+      de servicios de la sociedad de la información y de
+      comercio electrónico, se informa a los usuarios de
+      los siguientes datos identificativos del titular
+      de este sitio web:
     </p>
 
     <div class="legal-data">
-      <p><strong>Nombre fiscal:</strong> Cristina Laguna Franco</p>
-      <p><strong>NIF/CIF:</strong> 47728788Q</p>
+
       <p>
-        <strong>Domicilio:</strong>
-        St. Antoni Llefià, 127, 08913 Badalona, Barcelona
+        <strong>Titular:</strong>
+        Cristina Laguna Franco
       </p>
+
+      <p>
+        <strong>NIF:</strong>
+        47728788Q
+      </p>
+
+      <p>
+        <strong>Nombre comercial:</strong>
+        Clínica Dental Dra. Laguna
+      </p>
+
+      <p>
+        <strong>Domicilio profesional:</strong>
+        St. Antoni Llefià, 127,
+        08913 Badalona, Barcelona
+      </p>
+
       <p>
         <strong>Teléfono:</strong>
-        <a href="tel:+34652540903">652 540 903</a>
+
+        <a href="tel:+34652540903">
+          652 540 903
+        </a>
       </p>
+
       <p>
         <strong>Correo electrónico:</strong>
+
         <a href="mailto:clinicadentaldra.laguna@gmail.com">
           clinicadentaldra.laguna@gmail.com
         </a>
       </p>
+
     </div>
+
   </section>
+
+
+  <!-- =====================================================
+       2. INFORMACIÓN PROFESIONAL
+       ===================================================== -->
 
   <section>
-    <h2>2. Objeto del sitio web</h2>
+
+    <h2>2. Información profesional</h2>
 
     <p>
-      El presente sitio web tiene como finalidad ofrecer información sobre
-      Clínica Dental Dra. Laguna, sus servicios odontológicos, tratamientos,
-      profesionales, datos de contacto y medios disponibles para solicitar
-      información o concertar una cita.
+      La odontología es una profesión sanitaria regulada.
+      Los datos profesionales correspondientes a la titular
+      son los siguientes:
     </p>
+
+    <div class="legal-data">
+
+      <p>
+        <strong>Colegio profesional:</strong>
+        Col·legi Oficial d'Odontòlegs i Estomatòlegs
+        de Catalunya (COEC)
+      </p>
+
+      <p>
+        <strong>N.º de colegiada:</strong>
+        [AÑADIR NÚMERO DE COLEGIADA]
+      </p>
+
+      <p>
+        <strong>Título académico o profesional:</strong>
+        [AÑADIR TÍTULO OFICIAL EXACTO]
+      </p>
+
+      <p>
+        <strong>Estado de expedición del título:</strong>
+        [AÑADIR PAÍS]
+      </p>
+
+    </div>
+
+    <p>
+      El ejercicio profesional se encuentra sujeto a la
+      normativa sanitaria y profesional aplicable, así como
+      a las normas deontológicas correspondientes al ejercicio
+      de la odontología.
+    </p>
+
+    <p>
+      Las normas y la información profesional del colegio
+      correspondiente pueden consultarse a través del
+      Col·legi Oficial d'Odontòlegs i Estomatòlegs
+      de Catalunya (COEC).
+    </p>
+
   </section>
+
+
+  <!-- =====================================================
+       3. AUTORIZACIÓN SANITARIA
+       ===================================================== -->
 
   <section>
-    <h2>3. Condiciones de uso</h2>
+
+    <h2>3. Centro y autorización sanitaria</h2>
 
     <p>
-      El acceso y utilización de este sitio web atribuye la condición de usuario
-      e implica la aceptación de las presentes condiciones de uso.
+      Clínica Dental Dra. Laguna desarrolla su actividad
+      sanitaria en Badalona, Barcelona.
     </p>
 
-    <p>
-      El usuario se compromete a realizar un uso adecuado de los contenidos y
-      servicios del sitio web y a no utilizarlos para actividades contrarias a
-      la ley, la buena fe, el orden público o los derechos de terceros.
-    </p>
+    <div class="legal-data">
+
+      <p>
+        <strong>Centro:</strong>
+        Clínica Dental Dra. Laguna
+      </p>
+
+      <p>
+        <strong>Dirección:</strong>
+        St. Antoni Llefià, 127,
+        08913 Badalona, Barcelona
+      </p>
+
+      <p>
+        <strong>N.º de registro/autorización sanitaria:</strong>
+        [AÑADIR NÚMERO DE REGISTRO SANITARIO DEL CENTRO]
+      </p>
+
+      <p>
+        <strong>Autoridad sanitaria competente:</strong>
+        Departament de Salut de la Generalitat de Catalunya
+      </p>
+
+    </div>
+
   </section>
+
+
+  <!-- =====================================================
+       4. OBJETO
+       ===================================================== -->
 
   <section>
-    <h2>4. Propiedad intelectual e industrial</h2>
+
+    <h2>4. Objeto del sitio web</h2>
 
     <p>
-      Los contenidos de este sitio web, incluyendo, entre otros, textos,
-      fotografías, imágenes, diseños, logotipos, elementos gráficos y código,
-      están protegidos por la normativa aplicable en materia de propiedad
-      intelectual e industrial.
+      El presente sitio web tiene como finalidad ofrecer
+      información sobre Clínica Dental Dra. Laguna,
+      sus profesionales, servicios odontológicos,
+      tratamientos, ubicación, datos de contacto
+      y medios disponibles para solicitar información
+      o concertar una cita.
     </p>
 
     <p>
-      Queda prohibida su reproducción, distribución, transformación o
-      utilización sin autorización del titular, salvo en los casos permitidos
-      expresamente por la legislación vigente.
+      La información publicada en este sitio web tiene
+      carácter exclusivamente informativo y no constituye,
+      por sí misma, un diagnóstico, una prescripción médica
+      ni una relación profesional entre el usuario y
+      Clínica Dental Dra. Laguna.
     </p>
+
   </section>
+
+
+  <!-- =====================================================
+       5. CONDICIONES DE USO
+       ===================================================== -->
 
   <section>
-    <h2>5. Responsabilidad</h2>
+
+    <h2>5. Condiciones de acceso y uso</h2>
 
     <p>
-      El titular procura que la información publicada en este sitio web sea
-      correcta y esté actualizada. No obstante, no puede garantizar la
-      inexistencia de errores ni la disponibilidad permanente del sitio web.
+      El acceso y utilización de este sitio web atribuye
+      la condición de usuario e implica la aceptación
+      de las presentes condiciones de uso.
     </p>
 
     <p>
-      La información publicada tiene carácter general e informativo y no
-      sustituye el diagnóstico, valoración o tratamiento individualizado
-      realizado por un profesional sanitario.
+      El usuario se compromete a realizar un uso adecuado
+      y lícito del sitio web, sus contenidos y servicios.
     </p>
+
+    <p>
+      Queda prohibido utilizar este sitio web para
+      actividades contrarias a la legislación vigente,
+      la buena fe, el orden público o los derechos
+      e intereses de terceros.
+    </p>
+
+    <p>
+      Asimismo, queda prohibido realizar actuaciones que
+      puedan dañar, inutilizar, sobrecargar o deteriorar
+      el sitio web o impedir su normal funcionamiento.
+    </p>
+
   </section>
+
+
+  <!-- =====================================================
+       6. INFORMACIÓN SANITARIA
+       ===================================================== -->
 
   <section>
-    <h2>6. Enlaces externos</h2>
+
+    <h2>6. Información sanitaria</h2>
 
     <p>
-      Este sitio web puede contener enlaces a páginas o servicios de terceros.
-      El titular no se responsabiliza de los contenidos, disponibilidad,
-      políticas de privacidad o prácticas de dichos sitios externos.
+      Los contenidos relacionados con salud bucodental,
+      odontología, tratamientos o procedimientos clínicos
+      publicados en este sitio web tienen carácter general
+      e informativo.
     </p>
+
+    <p>
+      Esta información no sustituye una valoración,
+      exploración, diagnóstico o tratamiento individualizado
+      realizado por un profesional sanitario cualificado.
+    </p>
+
+    <p>
+      Cada paciente requiere una valoración clínica
+      individual antes de determinar la conveniencia
+      de un tratamiento determinado.
+    </p>
+
   </section>
+
+
+  <!-- =====================================================
+       7. PROPIEDAD INTELECTUAL
+       ===================================================== -->
 
   <section>
-    <h2>7. Protección de datos personales</h2>
+
+    <h2>7. Propiedad intelectual e industrial</h2>
 
     <p>
-      El tratamiento de los datos personales facilitados a través de este sitio
-      web se regula en la correspondiente Política de Privacidad.
+      Los contenidos de este sitio web, incluyendo,
+      entre otros, textos, fotografías, imágenes,
+      logotipos, diseños, elementos gráficos,
+      estructura, código y demás contenidos,
+      están protegidos por la normativa aplicable
+      en materia de propiedad intelectual e industrial.
     </p>
 
     <p>
-      Puedes consultar nuestra
-      <a href="politica-privacidad.html">Política de Privacidad</a>.
+      Salvo que se indique expresamente lo contrario,
+      dichos contenidos pertenecen a su titular o se
+      utilizan con la correspondiente autorización
+      o licencia.
     </p>
+
+    <p>
+      Queda prohibida la reproducción, distribución,
+      comunicación pública, transformación o explotación
+      de dichos contenidos sin autorización previa,
+      salvo en los supuestos expresamente permitidos
+      por la legislación vigente.
+    </p>
+
   </section>
+
+
+  <!-- =====================================================
+       8. RESPONSABILIDAD
+       ===================================================== -->
 
   <section>
-    <h2>8. Cookies</h2>
+
+    <h2>8. Responsabilidad</h2>
 
     <p>
-      Este sitio web puede utilizar cookies necesarias para su funcionamiento
-      y, en su caso, otras cookies sujetas al consentimiento del usuario.
+      Clínica Dental Dra. Laguna procura que la información
+      publicada en este sitio web sea correcta, clara
+      y esté actualizada.
     </p>
 
     <p>
-      Puedes consultar más información en nuestra
-      <a href="politica-cookies.html">Política de Cookies</a>.
+      No obstante, no puede garantizar la inexistencia
+      absoluta de errores, interrupciones, fallos técnicos
+      o la disponibilidad permanente de todos los contenidos
+      y servicios.
     </p>
+
+    <p>
+      El titular no será responsable de los daños que
+      pudieran derivarse de interferencias, interrupciones,
+      virus informáticos, averías o desconexiones motivadas
+      por causas ajenas a su control, sin perjuicio de las
+      responsabilidades que legalmente pudieran corresponder.
+    </p>
+
   </section>
+
+
+  <!-- =====================================================
+       9. ENLACES Y SERVICIOS EXTERNOS
+       ===================================================== -->
 
   <section>
-    <h2>9. Legislación aplicable</h2>
+
+    <h2>9. Enlaces y servicios de terceros</h2>
 
     <p>
-      Las presentes condiciones se rigen por la legislación española. Cualquier
-      controversia será resuelta conforme a la normativa aplicable en materia
-      de jurisdicción y competencia.
+      Este sitio web puede contener enlaces o accesos
+      a sitios web, plataformas y servicios gestionados
+      por terceros.
     </p>
+
+    <p>
+      Entre ellos pueden encontrarse servicios de mapas,
+      mensajería, gestión de citas u otros servicios
+      tecnológicos externos.
+    </p>
+
+    <p>
+      La inclusión de estos enlaces tiene como finalidad
+      facilitar al usuario el acceso a determinados
+      recursos o funcionalidades y no implica necesariamente
+      una recomendación o aprobación de todos los contenidos,
+      condiciones o prácticas de dichos terceros.
+    </p>
+
+    <p>
+      Los servicios de terceros están sujetos a sus
+      propias condiciones de uso y políticas de privacidad.
+    </p>
+
   </section>
+
+
+  <!-- =====================================================
+       10. CITA ONLINE
+       ===================================================== -->
+
+  <section>
+
+    <h2>10. Solicitud de cita online</h2>
+
+    <p>
+      Este sitio web puede facilitar el acceso a una
+      plataforma externa para solicitar o gestionar
+      citas con la clínica.
+    </p>
+
+    <p>
+      Cuando el usuario accede a dicho servicio abandona,
+      total o parcialmente, el entorno técnico gestionado
+      directamente por este sitio web.
+    </p>
+
+    <p>
+      Se recomienda consultar las condiciones de uso
+      y la política de privacidad de la plataforma externa
+      antes de introducir datos personales.
+    </p>
+
+  </section>
+
+
+  <!-- =====================================================
+       11. WHATSAPP
+       ===================================================== -->
+
+  <section>
+
+    <h2>11. Contacto mediante WhatsApp</h2>
+
+    <p>
+      Este sitio web puede incluir enlaces que permiten
+      iniciar una conversación con Clínica Dental
+      Dra. Laguna mediante WhatsApp.
+    </p>
+
+    <p>
+      Al utilizar este servicio, determinados datos
+      también podrán ser tratados por el proveedor
+      de WhatsApp conforme a sus propias condiciones
+      y políticas.
+    </p>
+
+    <div class="notice">
+      Se recomienda no enviar mediante WhatsApp información
+      clínica especialmente sensible, informes médicos,
+      radiografías, fotografías clínicas u otra documentación
+      sanitaria, salvo cuando resulte necesario y haya sido
+      solicitado por un profesional de la clínica.
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       12. PROTECCIÓN DE DATOS
+       ===================================================== -->
+
+  <section>
+
+    <h2>12. Protección de datos personales</h2>
+
+    <p>
+      El tratamiento de los datos personales de usuarios
+      y pacientes se realizará de conformidad con la
+      normativa aplicable en materia de protección de datos.
+    </p>
+
+    <p>
+      Puede consultar información detallada sobre
+      el responsable del tratamiento, las finalidades,
+      las bases jurídicas, los destinatarios, los plazos
+      de conservación y sus derechos en nuestra
+      <a href="politica-privacidad.html">
+        Política de Privacidad
+      </a>.
+    </p>
+
+  </section>
+
+
+  <!-- =====================================================
+       13. COOKIES
+       ===================================================== -->
+
+  <section>
+
+    <h2>13. Cookies y tecnologías similares</h2>
+
+    <p>
+      Este sitio web puede utilizar cookies o tecnologías
+      similares necesarias para su funcionamiento y,
+      cuando corresponda, tecnologías de terceros sujetas
+      al consentimiento del usuario.
+    </p>
+
+    <p>
+      Puede consultar información detallada sobre
+      su utilización en nuestra
+      <a href="politica-cookies.html">
+        Política de Cookies
+      </a>.
+    </p>
+
+  </section>
+
+
+  <!-- =====================================================
+       14. MODIFICACIONES
+       ===================================================== -->
+
+  <section>
+
+    <h2>14. Modificación del Aviso Legal</h2>
+
+    <p>
+      Clínica Dental Dra. Laguna podrá modificar
+      el presente Aviso Legal cuando resulte necesario
+      para adaptarlo a cambios legislativos, regulatorios,
+      técnicos o relacionados con el funcionamiento
+      del sitio web.
+    </p>
+
+    <p>
+      La versión vigente será la publicada en este
+      sitio web en cada momento.
+    </p>
+
+  </section>
+
+
+  <!-- =====================================================
+       15. LEGISLACIÓN
+       ===================================================== -->
+
+  <section>
+
+    <h2>15. Legislación aplicable</h2>
+
+    <p>
+      El presente Aviso Legal se rige por la legislación
+      española.
+    </p>
+
+    <p>
+      Cualquier controversia relacionada con este sitio
+      web será sometida a los juzgados y tribunales que
+      resulten competentes conforme a la legislación
+      aplicable, respetando en todo caso las normas
+      imperativas relativas a consumidores y usuarios
+      cuando resulten de aplicación.
+    </p>
+
+  </section>
+
+
+  <!-- =====================================================
+       16. CONTACTO
+       ===================================================== -->
+
+  <section>
+
+    <h2>16. Contacto</h2>
+
+    <p>
+      Para cualquier consulta relacionada con este
+      sitio web o con el presente Aviso Legal puede
+      ponerse en contacto con:
+    </p>
+
+    <div class="legal-data">
+
+      <p>
+        <strong>Clínica Dental Dra. Laguna</strong>
+      </p>
+
+      <p>
+        Cristina Laguna Franco
+      </p>
+
+      <p>
+        St. Antoni Llefià, 127<br>
+        08913 Badalona, Barcelona
+      </p>
+
+      <p>
+        <strong>Teléfono:</strong>
+
+        <a href="tel:+34652540903">
+          652 540 903
+        </a>
+      </p>
+
+      <p>
+        <strong>Correo electrónico:</strong>
+
+        <a href="mailto:clinicadentaldra.laguna@gmail.com">
+          clinicadentaldra.laguna@gmail.com
+        </a>
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <p class="updated">
+    <strong>Última actualización:</strong>
+    septiembre de 2026.
+  </p>
 
 </main>
 
+
 <footer>
-  © <span id="year"></span> Clínica Dental Dra. Laguna ·
-  <a href="../index.html">Volver a la página principal</a>
+
+  © <span id="year"></span>
+  Clínica Dental Dra. Laguna
+
+  ·
+
+  <a href="aviso-legal.html">
+    Aviso Legal
+  </a>
+
+  ·
+
+  <a href="politica-privacidad.html">
+    Privacidad
+  </a>
+
+  ·
+
+  <a href="politica-cookies.html">
+    Cookies
+  </a>
+
+  ·
+
+  <a href="../index.html">
+    Inicio
+  </a>
+
 </footer>
 
+
 <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
 </script>
 
 </body>
