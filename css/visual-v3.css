@@ -1,0 +1,93 @@
+/* Visual phase 3: editorial team profiles and a patient-facing technology section. */
+#equipo, #tecnologia { scroll-margin-top: 124px; }
+.clinic-team { padding: 86px 48px 78px; background: #faf8f1; }
+.clinic-team-heading { display: grid; grid-template-columns: 1.2fr .8fr; gap: 80px; align-items: end; margin-bottom: 44px; }
+.clinic-team-summary { max-width: 350px; justify-self: end; margin: 0 0 4px; color: #536153; font-size: 13px; line-height: 1.85; }
+.clinic-profile-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); border-top: 1px solid #cdd5c5; }
+.clinic-profile { display: flex; align-items: center; gap: 27px; padding: 31px 35px 33px 0; border-bottom: 1px solid #cdd5c5; }
+.clinic-profile:nth-child(even) { padding-left: 35px; border-left: 1px solid #cdd5c5; }
+.clinic-profile-monogram { position: relative; display: flex; justify-content: center; align-items: center; flex: 0 0 87px; height: 100px; border: 1px solid #cbd4c2; border-radius: 48px 48px 4px 4px; background: #f0f1e7; font: 300 30px/1 'Fraunces',Georgia,serif; letter-spacing: -.05em; color: #59704d; }
+.clinic-profile-monogram span { position: absolute; width: 20px; height: 1px; background: #ae976d; bottom: 19px; }
+.clinic-profile-content { min-width: 0; }
+.clinic-profile-role { margin: 0 0 11px; color: #745e39; text-transform: uppercase; font-size: 9px; letter-spacing: .12em; line-height: 1.5; font-weight: 500; }
+.clinic-profile h3 { margin: 0 0 11px; color: #183b2b; font: 400 clamp(23px,2.1vw,29px)/1.18 'Fraunces',Georgia,serif; letter-spacing: -.025em; }
+.clinic-profile-description { max-width: 330px; margin: 0; color: #536153; font-size: 12px; line-height: 1.8; }
+.clinic-team-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 26px; }
+.clinic-team-footer p { margin: 0; color: #637159; font-size: 10px; line-height: 1.8; }
+.clinic-team-footer a, .clinic-technology-followup a { display: inline-flex; gap: 20px; align-items: center; padding: 9px 0; border-bottom: 1px solid #a8b99c; color: #284632; font-size: 11px; line-height: 1.5; }
+.clinic-team-footer svg, .clinic-technology-followup a svg { width: 15px; height: 15px; flex-shrink: 0; }
+.clinic-team a:focus-visible, .clinic-technology a:focus-visible { outline: 2px solid #816332; outline-offset: 5px; }
+.clinic-technology { padding: 80px 48px 86px; background: #e9ecdf; }
+.clinic-technology-heading { margin-bottom: 41px; }
+.clinic-technology-layout { display: grid; grid-template-columns: .84fr 1.16fr; gap: 66px; align-items: stretch; }
+.clinic-digital-panel { position: relative; display: flex; flex-direction: column; min-height: 495px; padding: 29px 35px 32px; background: #203e30; border: 1px solid #506449; border-radius: 4px; color: #faf7ed; overflow: hidden; }
+.clinic-digital-top { display: flex; align-items: center; justify-content: space-between; gap: 20px; color: #c7d2ba; font-size: 7px; line-height: 1.6; letter-spacing: .12em; text-transform: uppercase; }
+.clinic-digital-art { width: 250px; margin: 23px auto 3px; color: #a6b994; opacity: .75; }
+.clinic-digital-art svg { width: 100%; height: auto; display: block; }
+.clinic-digital-statement { position: relative; margin: 0 0 24px; font: 300 clamp(40px,3.6vw,54px)/1.05 'Fraunces',Georgia,serif; letter-spacing: -.035em; }
+.clinic-digital-statement em { color: #e0c9a0; font-weight: 400; }
+.clinic-digital-caption { margin: auto 0 0; padding-top: 19px; border-top: 1px solid #5c7256; color: #d1ddc9; font-size: 10px; line-height: 1.8; }
+.clinic-technology-list { min-width: 0; border-top: 1px solid #bdc9b3; }
+.clinic-technology-item { display: grid; grid-template-columns: 38px minmax(0,1fr) 20px; gap: 23px; padding: 27px 0; border-bottom: 1px solid #bdc9b3; }
+.clinic-technology-icon { padding-top: 15px; color: #617652; }
+.clinic-technology-icon svg { width: 31px; height: 31px; }
+.clinic-technology-label { margin: 0 0 9px; font-size: 9px; line-height: 1.5; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: #695536; }
+.clinic-technology-item h3 { margin: 0 0 10px; color: #183b2b; font: 400 29px/1.15 'Fraunces',Georgia,serif; letter-spacing: -.025em; }
+.clinic-technology-description { max-width: 390px; margin: 0; color: #4d5d48; font-size: 12px; line-height: 1.8; }
+.clinic-technology-number { padding-top: 1px; color: #657755; font: 400 13px/1.5 'Fraunces',Georgia,serif; }
+.clinic-technology-followup { padding: 24px 0 0 61px; }
+.clinic-technology-followup > p:not(.clinic-technology-label) { max-width: 390px; margin: 0 0 10px; color: #4d5d48; font-size: 12px; line-height: 1.8; }
+@media (max-width: 1179px) {
+  .clinic-team, .clinic-technology { padding: 68px 32px; }
+  .clinic-team-heading { gap: 45px; }
+  .clinic-profile { gap: 21px; padding-right: 25px; }
+  .clinic-profile:nth-child(even) { padding-left: 25px; }
+  .clinic-profile-monogram { flex-basis: 70px; height: 88px; font-size: 26px; }
+  .clinic-technology-layout { gap: 39px; }
+  .clinic-digital-panel { padding: 26px; }
+  .clinic-digital-top { font-size: 6px; letter-spacing: .06em; }
+  .clinic-digital-art { width: 215px; max-width: 100%; }
+  .clinic-digital-statement { font-size: 43px; }
+  .clinic-technology-item { gap: 15px; grid-template-columns: 32px minmax(0,1fr) 20px; }
+  .clinic-technology-item h3 { font-size: 26px; }
+  .clinic-technology-followup { padding-left: 47px; }
+}
+@media (max-width: 767px) {
+  #equipo, #tecnologia { scroll-margin-top: 102px; }
+  .clinic-team, .clinic-technology { padding: 52px 24px; }
+  .clinic-team-heading { grid-template-columns: 1fr; gap: 20px; margin-bottom: 29px; }
+  .clinic-team-summary { justify-self: start; max-width: 420px; font-size: 12px; }
+  .clinic-profile-grid { grid-template-columns: 1fr; }
+  .clinic-profile, .clinic-profile:nth-child(even) { padding: 25px 0; border-left: 0; gap: 22px; }
+  .clinic-profile h3 { font-size: 27px; }
+  .clinic-profile-role { margin-bottom: 9px; font-size: 8px; }
+  .clinic-profile-description { font-size: 11px; }
+  .clinic-team-footer { flex-direction: column; align-items: flex-start; gap: 13px; margin-top: 22px; }
+  .clinic-team-footer p { font-size: 9px; }
+  .clinic-team-footer a { font-size: 11px; }
+  .clinic-technology-heading { margin-bottom: 30px; }
+  .clinic-technology-heading .clinic-section-title { font-size: 37px; }
+  .clinic-technology-layout { grid-template-columns: 1fr; gap: 30px; }
+  .clinic-digital-panel { min-height: 0; padding: 23px 25px; }
+  .clinic-digital-top { font-size: 7px; }
+  .clinic-digital-art { position: absolute; right: -40px; top: 48px; margin: 0; width: 215px; opacity: .35; }
+  .clinic-digital-statement { margin: 38px 0 24px; font-size: 42px; }
+  .clinic-digital-caption { font-size: 10px; position: relative; }
+  .clinic-technology-item { padding: 24px 0; }
+  .clinic-technology-item h3 { font-size: 27px; }
+  .clinic-technology-description { font-size: 12px; }
+  .clinic-technology-followup { padding-top: 23px; }
+}
+@media (max-width: 359px) {
+  .clinic-team, .clinic-technology { padding-inline: 20px; }
+  .clinic-profile { gap: 17px; }
+  .clinic-profile-monogram { flex-basis: 57px; height: 77px; font-size: 23px; }
+  .clinic-profile h3 { font-size: 23px; }
+  .clinic-profile-role { letter-spacing: .05em; }
+  .clinic-technology-heading .clinic-section-title { font-size: 32px; }
+  .clinic-technology-item { gap: 12px; grid-template-columns: 25px minmax(0,1fr) 20px; }
+  .clinic-technology-icon svg { width: 25px; height: 25px; }
+  .clinic-technology-item h3 { font-size: 24px; }
+  .clinic-technology-followup { padding-left: 37px; }
+  .clinic-digital-top { font-size: 6px; }
+}
